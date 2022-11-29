@@ -1,82 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-</head>
-<body background="imagens/imgfundo.png">
-    <header>
-        <!--colocar a imagem do header com o logo-->
-        <img src = "imagens/banner.png" alt="Sobre o mar" >
-        <form action="">
-            <label for="Email">Email</label>
-            <input id="Email"name="Email" type="email">
-            <label for="Senha">Senha</label>
-            <input id="Senha"name="Senha"type="password">
-            <button>Entrar</button> 
-        </form> 
-    </header>
-    <nav>
-        <ul>
-            <button><a href="index.html">Início</a></button> 
-            <button><a href="sobre_jogo.html">Sobre</a></button>
-            <button><a href="voluntario.html">Voluntarie-se</a></button>
-            <button><a href="doacoes.html">Doações</a></button>
-            <button><a href="equipe.html">Equipe</a></button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="logo2.png">
+        <title>Voluntarie-se</title>
+    </head>
+    <body background="imagens/imgfundo.png">
+        <header>
+            <div class="caixa">
+                <img src="imagens/banner.png">
+                <button>Login</Button>
+            </div>
+            <div>    
+                <nav>
+                    <button><a href="index.html">Inicio</a></button> 
+                    <button><a href="sobre_dev.html">Sobre</a></button>
+                    <button><a herf="voluntario.html">Voluntarie-se</a></button> 
+                    <button><a href="doacoes.html">Doações</a></button> 
+                    <button><a href="equipe.html">Equipe</a></button>                 
+                </nav>
+            </div>   
+        </header>
+        <main>
+           
+           <p><h2><em> <strong> Voluntarie-se </strong></em></h2></p>
 
-        </ul>
-    </nav>
+            <p>Desde que este projeto começou em novembro de 2022, tive a sorte de ser contatado por centenas de pessoas que desejam ajudar no desenvolvimento do <strong>Above The Sea.</strong><br>
+            extremamente grato por tantas pessoas terem generosamente oferecido seu tempo!<br> 
+            Se você gostaria de se voluntariar para Above The Sea, leia as informações abaixo antes de se inscrever.<br>
+            </p>
+            <p>Você só deve se voluntariar para <strong>Above The Sea</strong> se:<br>
+            
+            Você tem pelo menos 18 anos.<br>
+            Você pode me mostrar exemplos de seus trabalhos anteriores.<br>
+            Você está ciente de que correrá o risco de ser substituído ou expulso caso não tenha compromisso com o projeto.<br>
+            </p>
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome:</label><br>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domino.com.br">
+                <br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx - xxxx">
+                <br>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea cols="50" rows="5" id="mensagem" class="input-padrao" required></textarea>
+                <br>
+                <form>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+                    <label for="radio-Whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-Whatsapp" checked>WhatsApp</label>
+                </form>
+                <br>
+                <form>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </form>
+                <br>
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas noticias por email?</label>
+                <br>
+                <br>
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </form>
+           
+        </main>
+        <footer>
+            <img src="imagens/img footer.png" alt="Redes sociais">
+            <p>Above The Sea © </p>
+            <p>abovethesea@hotmail.com  Copyright @2022</p>
 
-    <section>
-        <br>
-        <h3>REGISTRE-SE</h3>
-        <br>
-        <form action="">
-           <label for="nome">
-                Nome usuário
-            </label>
-            <input id="nome" name="nome" type="text">
-            <br>
-            <br>
-            <label for="email">
-                E-mail
-            </label>
-            <input id="email" name="email" type="email">
-            <br>
-            <br>
-            <label for="senha">
-                Senha     
-            </label>
-            <input id="senha" name="senha" type="password">
-            <br>
-            <br>
-            <label for="confirm_senha">
-                Confirme a senha
-            </label>
-            <input id="confirm_senha" name="cconfirm_senha" type="password">
-            <br>
-            <br>
-            <label for = "celular">
-                Telefone
-            </label>
-            <input id="celular" name="celular" type="tel">
-            <br>
-            <br>
-            <button>Enviar</button>
-            <br>
-            <br>
-            <br>
-         </form>
-    </section>
-
-    <Footer>
-        <!--colocar as imagens do footer e as imagens das redes sociais-->
-        <img src = "imagens/img footer.png" alt="Redes sociais" >
-        <p>Above The Sea © </p>
-        <p>abovethesea@hotmail.com  Copyright @2022</p>
-    </Footer>
-</body>
+        </footer>
+    </body>
 </html>
-

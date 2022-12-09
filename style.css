@@ -1,4 +1,7 @@
-body{
+* {
+    font-family: 'Cinzel Decorative', cursive;  } 
+
+  body{
     background-image: url(imagens/imgfundo.png);
 }
 
@@ -21,8 +24,32 @@ nav a:hover{
     text-decoration: underline;
 }
 
+nav button{
+    background-color: #15EDA3 ;
+    border-radius: 11px;
+    height: 40px;
+    width: 237px;
+    margin-right: 1rem;
+    box-shadow: inset 5px 2px 2px #1ead65;
+    border-width: 0.5px;
+    font-size: 20px;
+    text-decoration-color: #3B3030;
+}
 footer{
+    margin-top: 1rem;
     text-align: start;
     background-image: url(imagens/imgfooter.png);
     padding: 40px 0;  
 }
+
+h3{
+    text-align: left;
+    font-weight: bold ;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}*/

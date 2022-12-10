@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="imagens/logo2.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <!-- Links do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+
     <title>Registro</title>
 </head>
 
-<header>
-    <!--colocar a imagem do header com o logo-->
-    <img src = "imagens/banner.png" alt="Sobre o mar" >
-    <form action="">
-        <label for="Email">Email</label>
-        <input id="Email"name="Email" type="email">
-        <label for="Senha">Senha</label>
-        <input id="Senha"name="Senha"type="password">
-        <button>Entrar</button>
-    </form> 
-    <p>Ainda não tem cadastro? <a href="registro.html"><button>Registre-se</button></a></p>  
-</header>
-
 <body background="imagens/imgfundo.png">
+
+    <header>
+        <!--colocar a imagem do header com o logo-->
+        <img src = "imagens/banner.png" alt="Sobre o mar" >
+       
+        <!-- <form action="">
+                <label for="Email">Email</label>
+                <input id="Email"name="Email" type="email">
+                <label for="Senha">Senha</label>
+                <input id="Senha"name="Senha"type="password">
+                <button>Entrar</button> Ainda não tem cadastro? <a href="registro.html"><button>Registre-se</a></button>    
+            </form>-->
+
+        </header>
+
     <nav>
         <ul>
             <button><a href="index.html">Início</a></button> 
@@ -32,53 +45,51 @@
         </ul>
     </nav>
 
-    <section>
-        <br>
-        <h3>REGISTRE-SE</h3>
-        <br>
-        <form action="">
-           <label for="nome">
-                Nome usuário
-            </label>
-            <input id="nome" name="nome" type="text">
-            <br>
-            <br>
-            <label for="email">
-                E-mail
-            </label>
-            <input id="email" name="email" type="email">
-            <br>
-            <br>
-            <label for="senha">
-                Senha     
-            </label>
-            <input id="senha" name="senha" type="password">
-            <br>
-            <br>
-            <label for="confirm_senha">
-                Confirme a senha
-            </label>
-            <input id="confirm_senha" name="cconfirm_senha" type="password">
-            <br>
-            <br>
-            <label for = "celular">
-                Telefone
-            </label>
-            <input id="celular" name="celular" type="tel">
-            <br>
-            <br>
-            <button>Enviar</button>
-            <br>
-            <br>
-            <br>
-         </form>
-    </section>
+    <main>
+        <h1>REGISTRE-SE</h1>
 
-    <Footer>
-        <!--colocar as imagens do footer e as imagens das redes sociais-->
-        <img src = "imagens/img footer.png" alt="Sobre o mar" >
+        <form action="">
+        
+            <fieldset>
+
+                <div>
+                    <label for="nome">Nome usuário</label>
+                    <input id="nome" name="nome" type="text">
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email">
+                </div>
+
+                <div>
+                    <label for = "celular">Telefone</label>
+                    <input id="celular" name="celular" type="tel">
+                </div>
+               
+                <div>
+                    <label for="senha">Senha</label>
+                    <input id="senha" name="senha" type="password">
+                </div>
+
+                <div>
+                    <label for="confirm_senha">Confirme a senha</label>
+                    <input id="confirm_senha" name="cconfirm_senha" type="password">
+                </div>
+
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </fieldset>
+
+          </form>
+    </main>
+
+    <footer>        
+        <!-- <img src="imagens/img footer.png" alt="Redes sociais"> -->
         <p>Above The Sea © </p>
         <p>abovethesea@hotmail.com  Copyright @2022</p>
-    </Footer>
+    </footer>
+
 </body>
 </html>

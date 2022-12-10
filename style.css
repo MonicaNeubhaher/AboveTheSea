@@ -1,10 +1,15 @@
+
+/* definição do fundo e a fonte das telas*/
 * {
     font-family: 'Cinzel Decorative', cursive;  } 
 
   body{
     background-image: url(imagens/imgfundo.png);
 }
+/*fim*/
 
+
+/* definição do menu de navegação de todas as telas e os botões*/
 nav{
     display: flex;
     justify-content: flex-start;
@@ -13,10 +18,14 @@ nav{
 
 nav a {
     text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 12px;
     text-decoration: none;
+    width: 200px;
+    height: 39px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 27px;
+    color: #3B3030;
 }
 
 nav a:hover{
@@ -27,29 +36,87 @@ nav a:hover{
 nav button{
     background-color: #15EDA3 ;
     border-radius: 11px;
-    height: 40px;
+    height: 30px;
     width: 237px;
     margin-right: 1rem;
-    box-shadow: inset 5px 2px 2px #1ead65;
-    border-width: 0.5px;
-    font-size: 20px;
+    font-size: 10px;
     text-decoration-color: #3B3030;
+    border: 1px solid #000000;
+    box-shadow: inset 0px -8px 5px rgba(0, 0, 0, 0.25);
 }
+/*fim*/
+
+
+/* definição de header e fotter*/
+header form{
+     text-decoration-color: #3B3030;
+}
+
 footer{
     margin-top: 1rem;
     text-align: start;
     background-image: url(imagens/imgfooter.png);
     padding: 40px 0;  
 }
+/*fim*/
 
-h3{
-    text-align: left;
-    font-weight: bold ;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+
+/* definição do h1 para cabeçalho das páginas*/
+h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
+/*fim*/
 
-/*p{
-    margin-top: 1rem;
+/*definição de fonte para o texto da página na tag <main>*/
+main p{
+    font-family: 'Cherry Cream Soda';
     margin-bottom: 1rem;
-}*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+/*fim*/
+
+
+/*definição das imagens na página da Equipe*/
+figure {
+    display:table;
+    text-align: center;
+    font-family: 'Cherry Cream Soda';
+   }
+
+ figcaption {
+    display: table-caption;
+    caption-side: bottom;
+  } 
+
+  div.figure{
+    display:flex;
+  }
+ /*fim*/
+ 
+
+ /*definição do form para a página de Registro*/
+fieldset{
+    font-family: 'Cherry Cream Soda';
+    margin-top: 2rem;
+    margin-bottom:1rem;
+ }
+
+ fieldset div{
+   margin-top: 1rem;
+   width:400px;
+   text-align:right;
+ }
+
+form button{
+    font-weight: 700
+ }
+ /*fim*/
+   
+  

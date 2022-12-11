@@ -49,6 +49,8 @@ nav button{
 
 /* definição de header e fotter*/
 header form{
+     margin-top: 10px;
+     margin-left: 1rem;
      text-decoration-color: #3B3030;
 }
 
@@ -57,7 +59,11 @@ footer{
     text-align: start;
     background-image: url(imagens/imgfooter.png);
     padding: 40px 0;  
-}
+ }
+
+ footer p{
+    margin-left: 1rem;
+ }
 /*fim*/
 
 
@@ -106,17 +112,22 @@ fieldset{
     font-family: 'Cherry Cream Soda';
     margin-top: 2rem;
     margin-bottom:1rem;
- }
+  }
 
- fieldset div{
+fieldset div{
    margin-top: 1rem;
    width:400px;
    text-align:right;
- }
+}
 
 form button{
     font-weight: 700
  }
  /*fim*/
    
+ main p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
+}
   

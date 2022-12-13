@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="imagens/logo2.png">
         <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="voluntario.css">
+        <link rel="stylesheet" href="style.css">
         <title>Voluntarie-se</title>
     </head>
     <body background="imagens/imgfundo.png">
@@ -48,16 +50,16 @@
             <form>
                 <label for="nomesobrenome">Nome e Sobrenome:</label><br>
                 <input type="text" id="nomesobrenome" class="input-padrao" required>
-                <br>
+                
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domino.com.br">
-                <br>
+                
                 <label for="telefone">Telefone:</label><br>
                 <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx - xxxx">
-                <br>
+                
                 <label for="mensagem">Mensagem</label><br>
                 <textarea cols="50" rows="5" id="mensagem" class="input-padrao" required></textarea>
-                <br>
+                
                 <form>
                     <legend>Como prefere o nosso contato?</legend>
                     <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
@@ -66,7 +68,7 @@
                     
                     <label for="radio-Whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-Whatsapp" checked>WhatsApp</label>
                 </form>
-                <br>
+                
                 <form>
                     <legend>Qual horário prefere ser atendido?</legend>
                     <select>
@@ -75,19 +77,20 @@
                         <option>Noite</option>
                     </select>
                 </form>
-                <br>
+                
                 <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas noticias por email?</label>
-                <br>
-                <br>
+                
+                
                 <input type="submit" value="Enviar Formulario" class="enviar">
             </form>
            
         </main>
         <br>
         <footer>
-            <img src="imagens/img footer.png" alt="Redes sociais">
+            <div class="footer">
             <p>Above The Sea © </p>
             <p>abovethesea@hotmail.com  Copyright @2022</p>
+            </div>
         </footer>
     </body>
 </html>

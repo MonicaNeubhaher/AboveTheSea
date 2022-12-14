@@ -72,11 +72,12 @@ footer{
 
 /* definição do h1 para cabeçalho das páginas*/
 h1{
-    text-align: center;
+    text-align: left;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-left: 1rem;
 }
 /*fim*/
 
@@ -134,3 +135,10 @@ form button{
     text-align: justify;
 }
   
+#desenvolvedor {
+     display:inline-flex;
+     text-align:justify;
+     justify-content: space-between;
+     margin-right: 4rem;
+  }
+

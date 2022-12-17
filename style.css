@@ -136,17 +136,22 @@ form button{
 }
   
 #desenvolvedor {
+     display:inline-flex;
+     text-align: left;
      display:block;
      text-align:center;
      justify-content: space-between;
      margin-right: 4rem;
-}
-
+  }
 #jogo{
     display:inline-flex;
     text-align:left;
  /*   justify-content: space-between;*/
     margin-right: 6rem;
+}
+
+header img{
+    width: 100%;
 }
 
 .arquivos li {

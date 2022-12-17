@@ -33,8 +33,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
-nav button{
-    
+nav button{  
     background-color: #15EDA3 ;
     border-radius: 11px;
     height: 30px;
@@ -63,7 +62,8 @@ footer{
     background-image: url(imagens/imgfooter.png);
     padding: 40px 0;  
  }
-    footer p{
+
+ footer p{
         color:aliceblue;
         margin-left: 1rem;
 }
@@ -74,7 +74,7 @@ footer{
 h1{
     text-align: left;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
@@ -98,16 +98,16 @@ figure {
     display:table;
     text-align: center;
     font-family: 'Cherry Cream Soda';
-   }
+}
 
- figcaption {
+figcaption {
     display: table-caption;
     caption-side: bottom;
-  } 
+} 
 
-  div.figure{
+div.figure{
     display:flex;
-  }
+}
  /*fim*/
  
 
@@ -141,4 +141,21 @@ form button{
      justify-content: space-between;
      margin-right: 4rem;
   }
+#jogo{
+    display:inline-flex;
+    text-align:justify;
+    justify-content: space-between;
+    margin-right: 4rem;
+}
 
+.arquivos li {
+    display: flex;
+    font-family: 'Cherry Cream Soda';
+    margin-left: 1rem;
+}   
+
+.atualizaçoes {
+    display:inline-flex;
+    border-color: #000000;
+    background-color: #000000;
+}

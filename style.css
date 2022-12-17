@@ -136,17 +136,20 @@ form button{
 }
   
 #desenvolvedor {
-     display:inline-flex;
-     text-align: left;
-     justify-content: space-between;
-     margin-right: 4rem;
-     align-items: flex-start;
+     display:block;
+     margin-right: 70rem;
+     padding: 10px;
   }
+
+  #foto-do-dev{
+    display:block;
+     text-align: center;
+  }
+
 #jogo{
-    display:inline-flex;
-    text-align:justify;
-    justify-content: space-between;
-    margin-right: 4rem;
+    display: block;
+    margin-right: 80rem;
+    padding: 10px;
 }
 
 header img{

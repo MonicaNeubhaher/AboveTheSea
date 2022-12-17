@@ -137,8 +137,13 @@ form button{
   
 #desenvolvedor {
      display:inline-flex;
-     text-align:justify;
+     text-align: left;
      justify-content: space-between;
      margin-right: 4rem;
+     align-items: flex-start;
   }
+
+header img{
+    width: 100%;
+}
 

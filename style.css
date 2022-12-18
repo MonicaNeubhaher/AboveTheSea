@@ -5,6 +5,9 @@
 
   body{
     background-image: url(imagens/imgfundo.png);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 /*fim*/
 
@@ -136,18 +139,20 @@ form button{
 }
   
 #desenvolvedor {
-     display:inline-flex;
-     text-align: left;
      display:block;
-     text-align:center;
-     justify-content: space-between;
-     margin-right: 4rem;
+     margin-right: 70rem;
+     padding: 10px;
   }
+
+  #foto-do-dev{
+    display:block;
+     text-align: center;
+  }
+
 #jogo{
-    display:inline-flex;
-    text-align:left;
- /*   justify-content: space-between;*/
-    margin-right: 6rem;
+    display: block;
+    margin-right: 80rem;
+    padding: 10px;
 }
 
 header img{
@@ -164,4 +169,8 @@ header img{
     display:inline-flex;
     border-color: #000000;
     background-color: #000000;
+}
+
+main{
+    flex-grow: 1;
 }

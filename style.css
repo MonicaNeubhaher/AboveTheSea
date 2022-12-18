@@ -8,7 +8,6 @@
     }
 
   body{
-    background-image: url(imagens/imgfundo.png);
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -158,8 +157,7 @@ form button{
   }*/
 
 #jogo{
-    display: block;
-    margin-right: 80rem;
+    display: flex;
     padding: 10px;
 }
 

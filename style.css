@@ -5,6 +5,9 @@
 
   body{
     background-image: url(imagens/imgfundo.png);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 /*fim*/
 
@@ -166,4 +169,8 @@ header img{
     display:inline-flex;
     border-color: #000000;
     background-color: #000000;
+}
+
+main{
+    flex-grow: 1;
 }

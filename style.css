@@ -3,11 +3,14 @@
 * {
     font-family: 'Cinzel Decorative', cursive;  } 
 
+    html{
+        height: 100%;
+    }
+
   body{
-    background-image: url(imagens/imgfundo.png);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100%;
 }
 /*fim*/
 

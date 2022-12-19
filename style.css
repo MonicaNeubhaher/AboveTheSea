@@ -3,14 +3,11 @@
 * {
     font-family: 'Cinzel Decorative', cursive;  } 
 
-    html{
-        height: 100%;
-    }
-
   body{
+    background-image: url(imagens/imgfundo.png) no-repeat;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    height: 100vh;
 }
 /*fim*/
 
@@ -20,9 +17,10 @@ nav{
     display: flex;
     justify-content: flex-start;
     padding: 10px; 
+    font-family:""
 }
 
-nav a {
+/*nav a {
     text-transform: uppercase;
     text-decoration: none;
     width: 200px;
@@ -122,7 +120,7 @@ fieldset{
     font-family: 'Cherry Cream Soda';
     margin-top: 2rem;
     margin-bottom:1rem;
-  }
+}
 
 fieldset div{
    margin-top: 1rem;
@@ -132,10 +130,11 @@ fieldset div{
 
 form button{
     font-weight: 700
- }
+}
  /*fim*/
    
- main p{
+
+main p{
     margin-left: 1rem;
     margin-right: 1rem;
     text-align: justify;
@@ -147,17 +146,14 @@ form button{
      padding: 10px;
      justify-content: space-between;
   }
+
 #desenvolvedor p {
     padding-right:5rem;
 }
 
-/*  #foto-do-dev{
-    display:flex;
-     text-align: center;
-  }*/
-
 #jogo{
-    display: flex;
+    display: block;
+    margin-right: 80rem;
     padding: 10px;
 }
 
@@ -180,3 +176,68 @@ header img{
 main{
     flex-grow: 1;
 }
+
+
+/*menu dropdown*/
+
+.menu{
+    list-style:none;
+    float:left;
+    background-color: #15EDA3 ;
+
+    }
+    
+    .menu li{
+        position:relative;
+        float:left;
+        border:1px solid #adadaf;
+        font-family: 'Cinzel Decorative', cursive;  
+    } 
+    
+.menu li a{
+        color:#333; 
+        text-decoration:none; 
+        padding:1px 10px; 
+        display:flex;
+  
+    text-transform: uppercase;
+    width: 210px;
+    height: 39px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 27px;
+}
+
+    .menu li a:hover{
+    background:#333;
+    color:#fff;
+    /*-moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;*/
+    
+    /*-webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    float: none;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    position: relative;*/
+    }
+    
+    .menu li  ul{
+        position:absolute;
+        top:40px;
+        left:0;
+        background-color:rgb(189, 184, 184);
+        display:none;
+        }
+    
+    .menu li:hover ul, .menu li.over ul{display:block;}
+    
+    .menu li ul li{
+        border:1px solid #c0c0c0;
+        display:flex;
+    }
+    

@@ -15,6 +15,7 @@
 </head>
 <body>
     <header>
+        <img src="imagens/banner.png" alt="Banner do site">
         <form action="">
             <label for="email">Email</label>
             <input id="email" name="email" type="email">
@@ -23,13 +24,20 @@
             <button>Entrar</button>
         </form>
     </header>
-        <nav>
-            <button><a href="index.html">Início</a></button> 
-            <button><a href="sobre_jogo.html">Sobre</a></button>
-            <button><a href="voluntario.html">Voluntarie-se</a></button>
-            <button><a href="doacoes.html">Doações</a></button>
-            <button><a href="equipe.html">Equipe</a></button>
-        </nav>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+                  <li><a href="#">Sobre</a>
+                     <ul>
+                          <li><a href="sobre_jogo.html">O jogo</a></li>
+                          <li><a href="sobre_dev.html">O desenvolvedor</a></li>
+                        </ul>
+                </li>
+                <li><a href="voluntario.html">Voluntarie-se</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+        </ul>
+    </nav> 
     <main>
         <h1>SOBRE O DESENVOLVEDOR:</h1>
         

@@ -17,9 +17,11 @@
     <title>EQUIPE</title>
 </head>
 
-<body>
+<body background="imagens/imgfundo.png">
+
     <header>
         <!--colocar a imagem do header com o logo-->
+        <img src = "imagens/banner.png" alt="Sobre o mar" >
         <form action="">
             <label for="Email">Email</label>
             <input id="Email"name="Email" type="email">
@@ -30,15 +32,19 @@
     </header>
 
     <nav>
-        <ul>
-            <button><a href="index.html">Início</a></button> 
-            <button><a href="sobre_jogo.html">Sobre</a></button>
-            <button><a href="voluntario.html">Voluntarie-se</a></button>
-            <button><a href="doacoes.html">Doações</a></button>
-            <button><a href="equipe.html">Equipe</a></button>
-            
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+                  <li><a href="#">Sobre</a>
+                     <ul>
+                          <li><a href="sobre_jogo.html">O jogo</a></li>
+                          <li><a href="sobre_dev.html">O desenvolvedor</a></li>
+                        </ul>
+                </li>
+                <li><a href="voluntario.html">Voluntarie-se</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
         </ul>
-    </nav>
+    </nav> 
 
     <main>   
         <h1>EQUIPE</h1>

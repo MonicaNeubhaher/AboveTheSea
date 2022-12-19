@@ -148,13 +148,12 @@ form button{
   }
 
   #foto-do-dev{
-    display:block;
+    display: block;
      text-align: center;
   }
 
 #jogo{
     display: block;
-    margin-right: 80rem;
     padding: 10px;
 }
 

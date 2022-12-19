@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    background-color: #9cdbf3;
 }
 /*fim*/
 
@@ -20,13 +21,14 @@ nav{
     display: flex;
     justify-content: flex-start;
     padding: 10px; 
+    background-color: #dcdddd;
 }
 
 nav a {
     text-transform: uppercase;
     text-decoration: none;
     width: 200px;
-    height: 39px;
+    height: 29px;
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
@@ -40,7 +42,7 @@ nav a:hover{
 }
 
 nav button{  
-    background-color: #15EDA3 ;
+    background-color:#704f50 ;
     border-radius: 11px;
     height: 30px;
     width: 237px;
@@ -55,11 +57,16 @@ nav button{
 
 
 /* definição de header e fotter*/
+header{
+    background-color: #4cb3d3;
+    height: 5rem;
+}
 header form{
-     margin-top: 10px;
+     margin-top: 1rem;
      margin-left: 1rem;
      text-decoration-color: #3B3030;
-}
+     padding-top:1rem;
+ }
 
 footer{
     width: 100%;
@@ -184,8 +191,7 @@ main{
 .menu{
     list-style:none;
     float:left;
-    background-color: #15EDA3 ;
-
+ 
     }
     
     .menu li{
@@ -208,6 +214,7 @@ main{
     font-weight: 700;
     font-size: 1rem;
     line-height: 27px;
+
 }
 
     .menu li a:hover{
@@ -233,12 +240,23 @@ main{
         left:0;
         background-color:rgb(189, 184, 184);
         display:none;
+
         }
     
     .menu li:hover ul, .menu li.over ul{display:block;}
     
-    .menu li ul li{
+   /* .menu li ul li{
         border:1px solid #c0c0c0;
         display:flex;
-    }
+    }*/
+
     
+    .menu li{ margin-right: 20px;
+        background-color: #704f50 ;
+        border-radius: 11px;
+}
+
+.menu ul li{ 
+      margin-right: 0rem;
+}
+

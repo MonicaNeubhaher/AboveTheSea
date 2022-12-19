@@ -7,13 +7,12 @@
         height: 100%;
     }
 
-  body{
+    body{
     display: flex;
     flex-direction: column;
     min-height: 100%;
     background-color: #9cdbf3;
 }
-/*fim*/
 
 
 /* definição do menu de navegação de todas as telas e os botões*/
@@ -24,7 +23,7 @@ nav{
     background-color: #dcdddd;
 }
 
-nav a {
+/*nav a {
     text-transform: uppercase;
     text-decoration: none;
     width: 200px;
@@ -52,8 +51,7 @@ nav button{
     border: 1px solid #000000;
     box-shadow: inset 0px -8px 5px rgba(0, 0, 0, 0.25);
 }
-
-/*fim*/
+*/
 
 
 /* definição de header e fotter*/
@@ -61,12 +59,17 @@ header{
     background-color: #4cb3d3;
     height: 5rem;
 }
+
+header img{
+    width: 100%;
+}
+
 header form{
      margin-top: 1rem;
      margin-left: 1rem;
      text-decoration-color: #3B3030;
      padding-top:1rem;
- }
+}
 
 footer{
     width: 100%;
@@ -74,14 +77,12 @@ footer{
     text-align: start;
     background-image: url(imagens/imgfooter.png);
     padding: 40px 0;  
- }
+}
 
- footer p{
+footer p{
         color:aliceblue;
         margin-left: 1rem;
 }
-/*fim*/
-
 
 /* definição do h1 para cabeçalho das páginas*/
 h1{
@@ -92,9 +93,8 @@ h1{
     margin-bottom: 2rem;
     margin-left: 1rem;
 }
-/*fim*/
 
-/*definição de fonte para o texto da página na tag <main>*/
+/*definição da tag <P> na tag <main>*/
 main p{
     font-family: 'Cherry Cream Soda';
     margin-bottom: 1rem;
@@ -102,9 +102,10 @@ main p{
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
 }
-/*fim*/
-
 
 /*definição das imagens na página da Equipe*/
 figure {
@@ -121,15 +122,13 @@ figcaption {
 div.figure{
     display:flex;
 }
- /*fim*/
  
-
  /*definição do form para a página de Registro*/
 fieldset{
     font-family: 'Cherry Cream Soda';
     margin-top: 2rem;
     margin-bottom:1rem;
-  }
+}
 
 fieldset div{
    margin-top: 1rem;
@@ -139,15 +138,9 @@ fieldset div{
 
 form button{
     font-weight: 700
- }
- /*fim*/
-   
- main p{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-align: justify;
 }
-  
+    
+/* definição do texto e foto do desenvolvedor*/
 #desenvolvedor {
      display:flex;
      margin-right: 15rem;
@@ -163,15 +156,13 @@ form button{
      text-align: center;
   }*/
 
+/*definicão da página sobre o jogo*/
 #jogo{
     display: flex;
     padding: 10px;
 }
 
-header img{
-    width: 100%;
-}
-
+/* definição da página Index*/
 .arquivos li {
     display: flex;
     font-family: 'Cherry Cream Soda';
@@ -184,79 +175,65 @@ header img{
     background-color: #000000;
 }
 
+/*definição de todas as tag <Main>*/
 main{
     flex-grow: 1;
 }
 
+/* definição do menu com dropdown*/
 .menu{
     list-style:none;
     float:left;
- 
-    }
+}
     
-    .menu li{
-        position:relative;
-        float:left;
-        border:1px solid #adadaf;
-        font-family: 'Cinzel Decorative', cursive;  
-    } 
+.menu li{
+    position:relative;
+    float:left;
+    border:1px solid #adadaf;
+    font-family: 'Cinzel Decorative', cursive;  
+    box-shadow: inset 0px -8px 5px rgba(0, 0, 0, 0.25);
+    text-decoration: underline;
+} 
     
 .menu li a{
-        color:#333; 
-        text-decoration:none; 
-        padding:1px 10px; 
-        display:flex;
-  
-    text-transform: uppercase;
+    color:#333; 
+    text-decoration:none; 
+    padding:1px 10px; 
+    display:flex;
+   /* text-transform: uppercase;*/
     width: 210px;
     height: 39px;
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
     line-height: 27px;
-
 }
 
-    .menu li a:hover{
+.menu li a:hover{
     background:#333;
+    border-radius: 11px;
     color:#fff;
-    /*-moz-box-shadow:0 3px 10px 0 #CCC;
-    -webkit-box-shadow:0 3px 10px 0 #ccc;
-    text-shadow:0px 0px 5px #fff;*/
+}
     
-    /*-webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    float: none;
-    z-index: auto;
-    width: auto;
-    height: auto;
-    position: relative;*/
-    }
+.menu li  ul{
+    position:absolute;
+    top:40px;
+    left:0;
+    background-color:rgb(189, 184, 184);
+    display:none;
+}
     
-    .menu li  ul{
-        position:absolute;
-        top:40px;
-        left:0;
-        background-color:rgb(189, 184, 184);
-        display:none;
-
-        }
-    
-    .menu li:hover ul, .menu li.over ul{display:block;}
-    
-   /* .menu li ul li{
-        border:1px solid #c0c0c0;
-        display:flex;
-    }*/
-
-    
-    .menu li{ margin-right: 20px;
-        background-color: #704f50 ;
-        border-radius: 11px;
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+    border-radius: 11px;
+}
+      
+.menu li{ margin-right: 20px;
+    background-color: #704f50 ;
+    border-radius: 11px;
 }
 
 .menu ul li{ 
-      margin-right: 0rem;
+    margin-right: 0rem;
 }
 

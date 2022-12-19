@@ -177,6 +177,15 @@ header img{
     background-color: #000000;
 }
 
+.conteudo {
+    width: 60%;
+}
+
+.arquivos {
+    width: 40%;
+    
+}
+
 main{
     flex-grow: 1;
 }

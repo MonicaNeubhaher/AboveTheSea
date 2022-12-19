@@ -180,3 +180,65 @@ header img{
 main{
     flex-grow: 1;
 }
+
+.menu{
+    list-style:none;
+    float:left;
+    background-color: #15EDA3 ;
+
+    }
+    
+    .menu li{
+        position:relative;
+        float:left;
+        border:1px solid #adadaf;
+        font-family: 'Cinzel Decorative', cursive;  
+    } 
+    
+.menu li a{
+        color:#333; 
+        text-decoration:none; 
+        padding:1px 10px; 
+        display:flex;
+  
+    text-transform: uppercase;
+    width: 210px;
+    height: 39px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 27px;
+}
+
+    .menu li a:hover{
+    background:#333;
+    color:#fff;
+    /*-moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;*/
+    
+    /*-webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    float: none;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    position: relative;*/
+    }
+    
+    .menu li  ul{
+        position:absolute;
+        top:40px;
+        left:0;
+        background-color:rgb(189, 184, 184);
+        display:none;
+        }
+    
+    .menu li:hover ul, .menu li.over ul{display:block;}
+    
+    .menu li ul li{
+        border:1px solid #c0c0c0;
+        display:flex;
+    }
+    

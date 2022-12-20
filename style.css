@@ -16,7 +16,7 @@
 
 
 /* definição do menu de navegação de todas as telas e os botões*/
-nav{
+nav {
     display: flex;
     justify-content: flex-start;
     padding: 10px; 
@@ -88,14 +88,14 @@ h1{
 /*fim*/
 
 /*definição de fonte para o texto da página na tag <main>*/
-main p{
+/* main p {
     font-family: 'Cherry Cream Soda';
     margin-bottom: 1rem;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
-}
+} */
 /*fim*/
 
 
@@ -168,7 +168,7 @@ header img{
 .arquivos li {
     display: flex;
     font-family: 'Cherry Cream Soda';
-    margin-left: 1rem;
+    margin-left: 9rem;
 }   
 
 .atualizaçoes {
@@ -178,11 +178,15 @@ header img{
 }
 
 .conteudo {
-    width: 60%;
+    display:flex;
+    margin-right: 15rem;
+    padding: 10px;
+    justify-content: space-between;
+    width: 80%;
 }
 
 .arquivos {
-    width: 40%;
+    width: 20%;
     
 }
 

@@ -25,35 +25,39 @@
   </head>
 
   <body>
-    <header>
-      <h1>ABOVE THE SEA</h1>
-      <!--colocar a imagem do header com o logo-->
-    </header>
+    <header class="">
 
-    <form id="login" action="">
-      <label for="Email">Email</label>
-      <input id="Email" name="Email" type="email" />
-      <label for="Senha">Senha</label>
-      <input id="Senha" name="Senha" type="password" />
-      <button>Entrar</button> Ainda não tem cadastro? <a href="registro.html"><button>Registre-se</a></button>    
-    </form>
+      <section class="container header">
 
-    <nav>
-      <ul class="menu">
-        <li class="itens"><a href="index.html">Início</a></li>
-        <li>
-          <a href="#">Sobre</a>
-          <ul>
-            <li><a href="sobre_jogo.html">O jogo</a></li>
-            <li><a href="sobre_dev.html">O desenvolvedor</a></li>
+        <div id="banner">
+          <!--colocar a imagem do header com o logo-->
+          <img style="height: 100px; width:100px;" src="./imagens/logo2.png">
+
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html">Sobre</a>
+              <!-- <div class="nav_div">
+                <a href="#">Sobre</a>
+              </div>
+              <ul class="nav_ul">
+                <li><a href="sobre_jogo.html">O jogo</a></li>
+                <li><a href="sobre_dev.html">O desenvolvedor</a></li>
+              </ul> -->
+            </li>
+            <li><a href="voluntario.html">Voluntarie-se</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
           </ul>
-        </li>
-        <li><a href="voluntario.html">Voluntarie-se</a></li>
-        <li><a href="doacoes.html">Doações</a></li>
-        <li><a href="equipe.html">Equipe</a></li>
-      </ul>
-    </nav>
+        </nav>
+        <div>
+          <a class="btn_entrar" href="registro.html">Entrar</a>
+        </div>
 
+      </section>
+    </header>
+ 
     <main>
       <h1>EQUIPE</h1>
 
@@ -93,27 +97,31 @@
       <br />
     </main>
 
-    <footer class="container">
+    <footer>
       <!-- <img src="imagens/img footer.png" alt="Redes sociais"> -->
-      <div id="footer">
-        <div>
-          <p>Above The Sea ©</p>
-          <p>abovethesea@hotmail.com Copyright @2022</p>
+      <section class="container">
+        <div id="footer">
+          <div>
+            <p>Above The Sea ©</p>
+            <p>abovethesea@hotmail.com Copyright @2022</p>
+          </div>
+          <div class="footer_img">
+            <ul>
+              <li>
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+              </li>
+              <li>
+                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer_img">
-          <ul>
-            <li>
-              <i class="fa fa-facebook-official fa-1x" aria-hidden="true"></i>
-            </li>
-            <li>
-              <i class="fa fa-instagram fa-1x" aria-hidden="true"></i>
-            </li>
-            <li>
-              <i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      </section>
     </footer>
+
   </body>
 </html>

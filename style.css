@@ -1,4 +1,7 @@
 /* definição do fundo e a fonte das telas*/
+@import "./header.css";
+
+
 * {
     font-family: 'Cinzel Decorative', cursive;
 }
@@ -8,9 +11,6 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
     background-color: #9cdbf3;
 }
 
@@ -25,9 +25,10 @@ p {
     line-height: 22px;
 }
 
+/* definição do h1 e h3 para título e sub-título das páginas*/
 h1 {
     font-family: 'Cinzel Decorative';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
@@ -43,22 +44,13 @@ h3 {
     margin: 2rem 0;
 }
 
-/* definição de header e fotter*/
-header {
-    background-color: #4cb3d3;
-    height: 5rem;
+#banner {
+    display: flex;
+    justify-content: center;
 }
 
-header img {
-    width: 100%;
-}
-
-header h1 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-
+#banner img {
+    width: 8%
 }
 
 #login {
@@ -69,7 +61,12 @@ header h1 {
     margin-bottom: 10px;
     padding-top: 1rem;
     justify-content: space-between;
+}
 
+footer {
+    width: 100%;
+    padding: 3rem 0;
+    background-color: #4cb3d381;
 }
 
 #footer {
@@ -80,7 +77,6 @@ header h1 {
     margin: 10px;
     gap: 20px;
     align-items: center;
-    background-color: #4cb3d381;
 }
 
 .footer_img ul {
@@ -97,13 +93,7 @@ header h1 {
         justify-items: center;
         gap: 10px;
     }
-
-
 }
-
-
-/* definição do h1 para cabeçalho das páginas*/
-
 
 /*definição da tag <P> na tag <main>*/
 main p {
@@ -111,12 +101,6 @@ main p {
     text-align: justify;
     margin: 2rem;
     max-width: 40rem;
-
-}
-
-main h3 {
-    text-align: justify;
-    margin-left: 30px;
 }
 
 /*definição das imagens na página da Equipe*/
@@ -136,19 +120,24 @@ div.figure {
 }
 
 /*definição do form para a página de Registro*/
-fieldset {
+#registro {
+    display:flex;
+    flex-direction: column;
     font-family: 'Cherry Cream Soda';
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin: 0 auto;
+    align-items: center;
+    text-align: right;
 }
 
-fieldset div {
+#registro fieldset {
+    margin-bottom: 1rem;}
+
+#registro div {
     margin-top: 1rem;
-    width: 400px;
-    text-align: center;
+   /* text-align: right;*/
 }
 
-form button {
+#registro button {
     font-weight: 700
 }
 
@@ -187,17 +176,11 @@ form button {
         justify-items: center;
         gap: 10px;
     }
-
-
 }
 
 #atualizacoes nav {
     display: block;
     background-color: #dcdddd;
-}
-
-.container section {
-    max-width: 50rem
 }
 
 #lista_arquivos {
@@ -231,22 +214,19 @@ form button {
 }
 
 
-/*definição de todas as tag <Main>*/
+/*definição de todas as tag <Main>
 main {
     flex-grow: 1;
-}
+}*/
 
 /* definição do menu de navegação de todas as telas e os botões*/
-nav {
+/*nav {
     display: flex;
     justify-content: flex-start;
     padding: 10px;
     background-color: #dcdddd;
 }
 
-v
-
-/* definição do menu com dropdown*/
 .menu {
     list-style: none;
     float: left;
@@ -265,7 +245,6 @@ v
     text-decoration: none;
     padding: 1px 10px;
     display: flex;
-    /* text-transform: uppercase;*/
     width: 210px;
     height: 29px;
     font-style: normal;
@@ -309,6 +288,7 @@ v
     text-align: center flex-direction:row;
     justify-content: space-around;
 }
+*/
 
 .itens {
     text-align: center;

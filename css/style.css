@@ -141,23 +141,7 @@ div.figure {
     font-weight: 700
 }
 
-/* definição do texto e foto do desenvolvedor*/
-#desenvolvedor {
-    display: flex;
-    margin-right: 15rem;
-    padding: 10px;
-    justify-content: space-between;
-}
 
-#desenvolvedor p {
-    padding-right: 5rem;
-}
-
-/*definicão da página sobre o jogo*/
-#jogo {
-    display: flex;
-    padding: 10px;
-}
 
 /* definição da página Index*/
 #atualizacoes {

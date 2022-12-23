@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="icon" href="imagens/logo2.png" />
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <!-- Links do Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +17,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <title>Doações</title>
+  <title>Registro</title>
 </head>
 
 <body>
@@ -26,7 +26,6 @@
     <section class="container header">
 
       <div id="banner">
-        <!--colocar a imagem do header com o logo-->
         <img style="height: 100px; width:100px;" src="./imagens/logo2.png">
 
       </div>
@@ -55,25 +54,43 @@
   </header>
 
   <main>
-    <h1>DOAÇÕES</h1>
-    <div class="container">
-      <p>
-        Somos uma equipe nova no mundo gamer e nosso objetivo é colocar no
-        mercado um jogo dinâmico onde você faz parte do projeto com sugestões,
-        ajudando na construção desse game.
-      </p>
+    <h1>REGISTRE-SE</h1>
 
-      <p>
-        Para que isso aconteça, estamos aceitando doações em forma de assinatura
-        através de um patreon.
-      </p>
+    <form id="registro" action="">
+      <fieldset>
+        <div>
+          <label for="nome">Nome usuário</label>
+          <input id="nome" name="nome" type="text" />
+        </div>
 
-      <p><a href="">https://patreon.com/abovethesea</a></p>
-    </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" />
+        </div>
+
+        <div>
+          <label for="celular">Telefone</label>
+          <input id="celular" name="celular" type="tel" />
+        </div>
+
+        <div>
+          <label for="senha">Senha</label>
+          <input id="senha" name="senha" type="password" />
+        </div>
+
+        <div>
+          <label for="confirm_senha">Confirme a senha</label>
+          <input id="confirm_senha" name="cconfirm_senha" type="password" />
+        </div>
+
+        <div>
+          <button>Enviar</button>
+        </div>
+      </fieldset>
+    </form>
   </main>
 
   <footer>
-    <!-- <img src="imagens/img footer.png" alt="Redes sociais"> -->
     <section class="container">
       <div id="footer">
         <div>
@@ -94,7 +111,6 @@
           </ul>
         </div>
       </div>
-
     </section>
   </footer>
 </body>

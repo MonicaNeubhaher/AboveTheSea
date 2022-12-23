@@ -1,0 +1,5 @@
+/*definicão da página sobre o jogo*/
+#jogo {
+    display: flex;
+    padding: 10px;
+}

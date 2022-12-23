@@ -1,94 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="imagens/logo2.png">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
- 
-     <!-- Links do Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="imagens/logo2.png" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <title>Home</title>
+  <!-- Links do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <title>Home</title>
 </head>
 
 <body>
-    <header>
+  <header class="">
+
+    <section class="container header">
+
+      <div id="banner">
         <!--colocar a imagem do header com o logo-->
-        <img src = "imagens/banner.png" alt="Sobre o mar" >
-        <form action="">
-            <label for="Email">Email</label>
-            <input id="Email"name="Email" type="email">
-            <label for="Senha">Senha</label>
-            <input id="Senha"name="Senha"type="password">
-            <button>Entrar</button> Ainda não tem cadastro? <a href="registro.html"><button>Registre-se</a></button>    
-        </form>  
-     </header>          
-    
-    <nav>
-        <ul>
-            <button><a href="index.html">Início</a></button> 
-            <button><a href="sobre_jogo.html">Sobre</a></button>
-            <button><a href="voluntario.html">Voluntarie-se</a></button>
-            <button><a href="doacoes.html">Doações</a></button>
-            <button><a href="equipe.html">Equipe</a></button>
+        <img style="height: 100px; width:100px;" src="./imagens/logo2.png">
+
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html">Sobre</a>
+            <!-- <div class="nav_div">
+                <a href="#">Sobre</a>
+              </div>
+              <ul class="nav_ul">
+                <li><a href="sobre_jogo.html">O jogo</a></li>
+                <li><a href="sobre_dev.html">O desenvolvedor</a></li>
+              </ul> -->
+          </li>
+          <li><a href="voluntario.html">Voluntarie-se</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
         </ul>
-    </nav>   
-    
-    <main>
-    
-        <div class="atualizacoes">
+      </nav>
+      <div>
+        <a class="btn_entrar" href="registro.html">Entrar</a>
+      </div>
 
-            <h1>Atualização de 21 de novembro</h1>
-        </div>
-        <div class="conteudo">
-            
-            <h2> Em 21 de novembro de 2022</h2>
+    </section>
+  </header>
 
-                <p> 
-                    Se você tentar usar o iniciar o jogo  e não funcionar, não me envie um e-mail relatando como um “bug”. 
-                    Não há nada que eu possa fazer.  O  executável  nunca muda e a maneira como carrego a versão mais recente do jogo 
-                    também nunca muda.
-                    <br> 
-                    <br>
-                    Portanto, se você não conseguir usar ,  baixe a atualização mais recente, não tenho ideia de qual é o problema e não 
-                    há nada que eu possa fazer a respeito. 
-                    <br>
-                    <br>
-                    Sua única opção é tentar usar um dos outros links de download e se isso não funcionar, aguarde até que a próxima compilação 
-                    seja lançada. 
-                    <br>
-                    <br>
-                    Não sei mais o que te dizer. Na verdade, lancei uma nova versão do launcher hoje.
-                    <br>
-                    <br>
-                    O que mudou? Apenas uma coisa: o texto  das mensagens de erro. As mensagens de erro agora são extremamente curtas e informam 
-                    exatamente o que fazer se o iniciador não estiver funcionando: apenas desista do iniciador  e use um dos links de download 
-                    alternativos!
-                </p>
-            
+  <main>
+    <h1>Atualização de 21 de novembro</h1>
+    <div class="container">
+      <div id="atualizacoes">
+        <section>
+          <h3>Postado em 21 de novembro de 2022</h3>
+          <p>
+            Se você tentar usar o iniciar o jogo e não funcionar, não me envie
+            um e-mail relatando como um “bug”. Não há nada que eu possa fazer.
+            O executável nunca muda e a maneira como carrego a versão mais
+            recente do jogo também nunca muda.
+          </p>
+
+          <p>
+            Portanto, se você não conseguir usar , baixe a atualização mais
+            recente, não tenho ideia de qual é o problema e não há nada que eu
+            possa fazer a respeito.
+          </p>
+
+          <p>
+            Sua única opção é tentar usar um dos outros links de download e se
+            isso não funcionar, aguarde até que a próxima compilação seja
+            lançada.
+          </p>
+
+          <p>
+            Não sei mais o que te dizer. Na verdade, lancei uma nova versão do
+            launcher hoje.
+          </p>
+
+          <p>
+            O que mudou? Apenas uma coisa: o texto das mensagens de erro. As
+            mensagens de erro agora são extremamente curtas e informam
+            exatamente o que fazer se o iniciador não estiver funcionando:
+            apenas desista do iniciador e use um dos links de download
+            alternativos!
+          </p>
+        </section>
+
+        <div id="lista_arquivos">
+          <div>
+            <p>ARQUIVOS</p>
+          </div>
+          <div>
             <nav class="arquivos">
-                <ul>
+               <ul>
                     <li><a>ARQUIVOS</a></li>    
-                    <li><a href="novembro.html"> Novembro - 2022 </a></li>
-                    <li><a href="Outubro.html" > Outubro - 2022 </a></li>
-                    <li><a href="Setembro.html"> Setembro - 2022 </a></li>
-                    <li><a href="Agosto.html" >  Agosto - 2022 </a></li>
-                </ul>
+                  <li><a href="novembro.html"> Novembro - 2022 </a></li>
+                  <li><a href="Outubro.html"> Outubro - 2022 </a></li>
+                  <li><a href="Setembro.html"> Setembro - 2022 </a></li>
+                  <li><a href="Agosto.html">  Agosto - 2022 </a></li>
+               </ul>
             </nav> 
-                 
+                           </div>
         </div>   
-    </main>
+      </div>
+    </div>  </main>
 
-    <footer>        
-        <!-- <img src="imagens/img footer.png" alt="Redes sociais"> -->
-        <p>Above The Sea © </p>
-        <p>abovethesea@hotmail.com  Copyright @2022</p>
-    </footer>
+  <footer>
+    <section class="container">
+      <div id="footer">
+        <div>
+          <p>Above The Sea ©</p>
+          <p>abovethesea@hotmail.com Copyright @2022</p>
+        </div>
+        <div class="footer_img">
+          <ul>
+            <li>
+              <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </footer>
 </body>
+
 </html>

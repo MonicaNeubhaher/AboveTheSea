@@ -2,92 +2,117 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="icon" href="imagens/logo2.png">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-   
-    <!-- Links do Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Registro</title>
+  <link rel="icon" href="imagens/logo2.png" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Links do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <title>Registro</title>
 </head>
 
 <body>
+  <header class="">
 
-    <header>
-       
-        <!-- <form action="">
-                <label for="Email">Email</label>
-                <input id="Email"name="Email" type="email">
-                <label for="Senha">Senha</label>
-                <input id="Senha"name="Senha"type="password">
-                <button>Entrar</button> Ainda não tem cadastro? <a href="registro.html"><button>Registre-se</a></button>    
-            </form>-->
+    <section class="container header">
 
-        </header>
+      <div id="banner">
+        <img style="height: 100px; width:100px;" src="./imagens/logo2.png">
 
-    <nav>
-        <ul>
-            <button><a href="index.html">Início</a></button> 
-            <button><a href="sobre_jogo.html">Sobre</a></button>
-            <button><a href="voluntario.html">Voluntarie-se</a></button>
-            <button><a href="doacoes.html">Doações</a></button>
-            <button><a href="equipe.html">Equipe</a></button>
-
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html">Sobre</a>
+            <!-- <div class="nav_div">
+                <a href="#">Sobre</a>
+              </div>
+              <ul class="nav_ul">
+                <li><a href="sobre_jogo.html">O jogo</a></li>
+                <li><a href="sobre_dev.html">O desenvolvedor</a></li>
+              </ul> -->
+          </li>
+          <li><a href="voluntario.html">Voluntarie-se</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
         </ul>
-    </nav>
+      </nav>
+      <div>
+        <a class="btn_entrar" href="registro.html">Entrar</a>
+      </div>
 
-    <main>
-        <h1>REGISTRE-SE</h1>
+    </section>
+  </header>
 
-        <form action="">
-        
-            <fieldset>
+  <main>
+    <h1>REGISTRE-SE</h1>
 
-                <div>
-                    <label for="nome">Nome usuário</label>
-                    <input id="nome" name="nome" type="text">
-                </div>
+    <form id="registro" action="">
+      <fieldset>
+        <div>
+          <label for="nome">Nome usuário</label>
+          <input id="nome" name="nome" type="text" />
+        </div>
 
-                <div>
-                    <label for="email">E-mail</label>
-                    <input id="email" name="email" type="email">
-                </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" />
+        </div>
 
-                <div>
-                    <label for = "celular">Telefone</label>
-                    <input id="celular" name="celular" type="tel">
-                </div>
-               
-                <div>
-                    <label for="senha">Senha</label>
-                    <input id="senha" name="senha" type="password">
-                </div>
+        <div>
+          <label for="celular">Telefone</label>
+          <input id="celular" name="celular" type="tel" />
+        </div>
 
-                <div>
-                    <label for="confirm_senha">Confirme a senha</label>
-                    <input id="confirm_senha" name="cconfirm_senha" type="password">
-                </div>
+        <div>
+          <label for="senha">Senha</label>
+          <input id="senha" name="senha" type="password" />
+        </div>
 
-                <div>
-                    <button>Enviar</button>
-                </div>
-            </fieldset>
+        <div>
+          <label for="confirm_senha">Confirme a senha</label>
+          <input id="confirm_senha" name="cconfirm_senha" type="password" />
+        </div>
 
-          </form>
-    </main>
+        <div>
+          <button>Enviar</button>
+        </div>
+      </fieldset>
+    </form>
+  </main>
 
-    <footer>        
-        <!-- <img src="imagens/img footer.png" alt="Redes sociais"> -->
-        <p>Above The Sea © </p>
-        <p>abovethesea@hotmail.com  Copyright @2022</p>
-    </footer>
-
+  <footer>
+    <section class="container">
+      <div id="footer">
+        <div>
+          <p>Above The Sea ©</p>
+          <p>abovethesea@hotmail.com Copyright @2022</p>
+        </div>
+        <div class="footer_img">
+          <ul>
+            <li>
+              <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
 </body>
+
 </html>

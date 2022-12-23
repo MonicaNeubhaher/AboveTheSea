@@ -1,66 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <!-- <body background="imagens/imgfundo.png"> -->
-        
-        <main>
-           
-           <h2><strong> Voluntarie-se </strong></h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <p class="">Desde que este projeto começou em novembro de 2022, tive a sorte de ser contatado por centenas de pessoas que desejam ajudar no desenvolvimento do <strong>Above The Sea.</strong><br>
-            extremamente grato por tantas pessoas terem generosamente oferecido seu tempo!<br> 
-            Se você gostaria de se voluntariar para Above The Sea, leia as informações abaixo antes de se inscrever.<br>
-            </p>
-            <p>Você só deve se voluntariar para <strong>Above The Sea</strong> se:<br>
-            
-            Você tem pelo menos 18 anos.<br>
-            Você pode me mostrar exemplos de seus trabalhos anteriores.<br>
-            Você está ciente de que correrá o risco de ser substituído ou expulso caso não tenha compromisso com o projeto.<br>
-            </p>
-            <form>
-                <label for="nomesobrenome">Nome e Sobrenome:</label><br>
-                <input type="text" id="nomesobrenome" class="input-padrao" required>
-                
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domino.com.br">
-                
-                <label for="telefone">Telefone:</label><br>
-                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx - xxxx">
-                
-                <label for="mensagem">Mensagem</label><br>
-                <textarea cols="50" rows="5" id="mensagem" class="input-padrao" required></textarea>
-                
-                <form>
-                    <legend>Como prefere o nosso contato?</legend>
-                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
-                    
-                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
-                    
-                    <label for="radio-Whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-Whatsapp" checked>WhatsApp</label>
-                </form>
-                
-                <form>
-                    <legend>Qual horário prefere ser atendido?</legend>
-                    <select>
-                        <option>Manhã</option>
-                        <option>Tarde</option>
-                        <option>Noite</option>
-                    </select>
-                </form>
-                
-                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas noticias por email?</label>
-                
-                
-                <input type="submit" value="Enviar Formulario" class="enviar">
-            </form>
-           
-        </main>
-        <br>
-        <footer>
-            <div class="footer">
-            <p>Above The Sea © </p>
-            <p>abovethesea@hotmail.com  Copyright @2022</p>
-            </div>
-        </footer>
-    </body>
+  <link rel="icon" href="imagens/logo2.png" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/voluntario.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Links do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <title>VOLUNTARIE-SE</title>
+</head>
+
+<body>
+  <header class="">
+
+    <section class="container header">
+
+      <div id="banner">
+        <!--colocar a imagem do header com o logo-->
+        <img style="height: 100px; width:100px;" src="./imagens/logo2.png">
+
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html">Sobre</a>
+            <!-- <div class="nav_div">
+                <a href="#">Sobre</a>
+              </div>
+              <ul class="nav_ul">
+                <li><a href="sobre_jogo.html">O jogo</a></li>
+                <li><a href="sobre_dev.html">O desenvolvedor</a></li>
+              </ul> -->
+          </li>
+          <li><a href="voluntario.html">Voluntarie-se</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a class="btn_entrar" href="registro.html">Entrar</a>
+      </div>
+
+    </section>
+  </header>
+  <main class="container">
+    <h1>Voluntarie-se</h1>
+    <section>
+      <div>
+        <p>
+          Desde que este projeto começou em novembro de 2022, tive a sorte de ser
+          contatado por centenas de pessoas que desejam ajudar no desenvolvimento
+          do <strong>Above The Sea</strong>
+          extremamente grato por tantas pessoas terem generosamente oferecido seu
+          tempo!<br />
+          <br>
+          Se você gostaria de se voluntariar para Above The Sea, leia as
+          informações abaixo antes de se inscrever.<br />
+        </p>
+        <p>
+          Você só deve se voluntariar para
+          <strong>Above The Sea</strong> se:<br />
+
+          Você tem pelo menos 18 anos.<br />
+          Você pode me mostrar exemplos de seus trabalhos anteriores.<br />
+          Você está ciente de que correrá o risco de ser substituído ou expulso
+          caso não tenha compromisso com o projeto.<br />
+        </p>
+
+      </div>
+      <form id="voluntario">
+        <label for="nomesobrenome">Nome e Sobrenome:</label><br />
+        <input type="text" id="nomesobrenome" class="input-padrao" required />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domino.com.br" />
+
+        <label for="telefone">Telefone:</label><br />
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx - xxxx" />
+
+        <label for="mensagem">Mensagem</label><br />
+        <textarea cols="50" rows="5" id="mensagem" class="input-padrao" required></textarea>
+
+        <legend>Como prefere o nosso contato?</legend>
+        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" />Email</label>
+
+        <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+            id="radio-telefone" />Telefone</label>
+
+        <label for="radio-Whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-Whatsapp"
+            checked />WhatsApp</label>
+        <legend>Qual horário prefere ser atendido?</legend>
+        <select class="select">
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+          
+        </select>
+        <label class="checkbox"><input type="checkbox" checked /> Gostaria de receber nossas noticias
+          por email?</label>
+
+        <input type="submit" value="Enviar Formulario" class="enviar" />
+      </form>
+    </section>
+  </main>
+  <br />
+  <footer>
+    <!-- <img src="imagens/img footer.png" alt="Redes sociais"> -->
+    <section class="container">
+      <div id="footer">
+        <div>
+          <p>Above The Sea ©</p>
+          <p>abovethesea@hotmail.com Copyright @2022</p>
+        </div>
+        <div class="footer_img">
+          <ul>
+            <li>
+              <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </footer>
+</body>
+
 </html>

@@ -1,0 +1,22 @@
+/*definição das imagens na página da Equipe*/
+figure {
+    display: table;
+    text-align: center;
+    font-family: 'Cherry Cream Soda';
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+}
+
+div.figure {
+    display: flex;
+}
+
+main p {
+    font-family: 'Cherry Cream Soda';
+    text-align: justify;
+    margin: 2rem;
+   /* max-width: 40rem;*/
+}

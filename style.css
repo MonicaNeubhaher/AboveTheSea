@@ -51,9 +51,6 @@ nav button{
     box-shadow: inset 0px -8px 5px rgba(0, 0, 0, 0.25);
 }
 
-/*fim*/
-
-
 /* definição de header e fotter*/
 header form{
      margin-top: 10px;
@@ -73,8 +70,6 @@ footer{
         color:aliceblue;
         margin-left: 1rem;
 }
-/*fim*/
-
 
 /* definição do h1 para cabeçalho das páginas*/
 h1{
@@ -85,7 +80,7 @@ h1{
     margin-bottom: 2rem;
     margin-left: 1rem;
 }
-/*fim*/
+
 
 /*definição de fonte para o texto da página na tag <main>*/
 /* main p {

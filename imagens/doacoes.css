@@ -1,9 +1,3 @@
-/*definicão da página sobre o jogo*/
-#jogo {
-    display: flex;
-    padding: 10px;
-}
-
 main p {
     font-family: 'Cherry Cream Soda';
     text-align: justify;

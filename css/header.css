@@ -45,13 +45,14 @@ header{
         align-items:center;
    }
 }
+
 .header ul li a{
     background-color:  #a18181;
     text-decoration: none;
     padding: 1rem;
     margin:1rem;
     color:antiquewhite;
- }
+  }
 .header ul .nav_li{
     display:flex;
     flex-direction: column;
@@ -65,7 +66,6 @@ header{
     display:none;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    width:150px;
 } 
 
 

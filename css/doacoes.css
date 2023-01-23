@@ -4,12 +4,24 @@ main a:link{
 
 main a:hover{
     text-decoration:none;
-    color:brown;
-}
-
-.container p a{
-    display:block;
-    color: black;
+    color:black;
     text-align: center;
-
 }
+
+.container_doacoes{
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 2%;
+    margin-top: 2rem;
+}
+.container_doacoes a{
+   justify-content: center;
+}
+.container_doacoes p a{
+    display:flex;
+    color: black;
+ }
+ .container_doacoes p{
+    text-align: justify;
+ }
+ 

@@ -10,34 +10,37 @@
 .container_patreon{
     display:flex;
     max-width: 1040px;
-/*    margin: 0 auto;*/
+    margin-left: 2rem;
     padding: 0 2%;
 }
 
 #nivel_1{
     background-color:   #a18181;
-    width: 20rem;
-    height: 22rem;
-    margin: 1rem;
-    padding: 3rem;
+    width: 17rem;
+    height: 18rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding: 2rem;
     border-radius: 5px;
 }
 
 #nivel_2{
     background-color:   #a18181;
-    width: 20rem;
-    height: 22rem;
-    margin: 1rem;
-    padding: 3rem;
+    width: 17rem;
+    height: 18rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding: 2rem;
     border-radius: 5px;
 }
 
 #nivel_3{
     background-color:   #a18181;
-    width: 20rem;
-    height: 22rem;
-    margin: 1rem;
-    padding: 3rem;
+    width: 17rem;
+    height: 18rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    padding: 2rem;
     border-radius: 5px;
 }
 
@@ -64,11 +67,11 @@ h6{
     transition: 1s all;
     cursor: pointer;
     margin-right: 2rem;
-    width: 20rem;
+    width: 17rem;
     height: 4rem;
-    margin-bottom: 2rem;
-    margin-top:2rem;
-    align-items:flex-end baseline;
+    margin-bottom: 1rem;
+    margin-top:1rem;
+    align-items:baseline;
 }
 
 .enviar1:hover, .enviar2:hover, .enviar3:hover {

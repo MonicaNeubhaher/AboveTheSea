@@ -3,11 +3,12 @@ main{
     padding:3rem 0;
 
 }
+
 main section{
     display:flex;
     flex-direction: column;
     justify-items: center;
-    margin:2rem;
+    margin:1rem;
     gap:2rem;
 }
 
@@ -15,6 +16,11 @@ form{
     display:flex;
     flex-direction: column;
     margin:0 auto;
+    background-color:   #a18181;
+    padding-left:3rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-radius: 5px;
 }
 
 #voluntario form{
@@ -24,7 +30,7 @@ form{
 #voluntatio label, form legend{
     display: block;
     font-size: 20px;
-    margin: 0 0 10px;
+    margin-top: 2rem;
 }
 
 .input-padrao {
@@ -32,18 +38,24 @@ form{
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 80%;
+    border-radius: 5px;
+    background-color: antiquewhite;
 }
 
 legend, select, option{
-    margin:2rem 0;
-
+    margin:1rem 0;
+    margin-right: 1rem;
 }
+
 .checkbox {
     margin: 20px 0 ;
 }
+
 .select{
     gap: 1rem;
     margin-bottom:1rem;
+    margin-right: 2rem;
+    background-color: antiquewhite;
 }
 
 .enviar {
@@ -56,11 +68,17 @@ legend, select, option{
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
+    margin-right: 2rem;
 }
 
 .enviar:hover {
     background: greenyellow;
     transform: scale(1.2);
+}
+
+main p {
+    text-align: justify;
+    margin: 2rem;
 }
 
 

@@ -1,0 +1,112 @@
+#form_login {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 5px;
+    padding: 10px 15px;
+    width: 85%;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+.input-padrao:focus {
+    background: #333;
+    color: #fff;
+}
+
+#form_login label{
+    font-size: 14px;
+}
+
+.enviar {
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    width: 15rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.enviar:hover {
+    background: greenyellow;
+    transform: scale(1.2);
+}
+
+#logar {
+    background-color: #a18181;
+    width: 15rem;
+    height: 26rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#registrar {
+    background-color: #a18181;
+    width: 15rem;
+    height: 26rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#botao_enviar {
+    text-align: center;
+}
+
+#mensagem_tipo_login {
+    display: flex;
+    margin-top: 2rem auto;
+    gap: 6rem;
+    font-size: 14px;
+    width: auto;
+    justify-content: center;
+}
+
+.helper-text {
+    display: none;
+    font-size: .7rem;
+    color: darkred;
+    padding: 0;
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+}
+
+input.error {
+   border: solid 1px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+
+input.correct
+{
+    background-color: antiquewhite;
+    border: solid 1px black;
+}
+
+.visible {
+    display: block;
+}

@@ -1,6 +1,7 @@
 /* definição do texto e foto do desenvolvedor*/
 #desenvolvedor {
     display: flex;
+    align-items: center;
     margin-right: 15rem;
     padding: 10px;
     justify-content: space-between;

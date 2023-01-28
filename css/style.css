@@ -106,7 +106,7 @@ main p {
 /*definição das imagens na página da Equipe*/
 figure {
     display: table;
-    text-align: center;
+        text-align: center;
     font-family: 'Cherry Cream Soda';
 }
 
@@ -117,6 +117,7 @@ figcaption {
 
 div.figure {
     display: flex;
+    justify-content: center;
 }
 
 /*definição do form para a página de Registro*/

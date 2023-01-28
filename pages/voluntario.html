@@ -54,31 +54,40 @@
 
     </section>
   </header>
-  <main class="container">
+  <main >
+
+    <div>
     <h1>Voluntarie-se</h1>
-    <section>
-      <div>
-        <p>
+  
+  </div >
+    
+    
+    <section class="textos">
+      
+        <p class="texto-voluntario">
           Desde que este projeto começou em novembro de 2022, tive a sorte de ser
           contatado por centenas de pessoas que desejam ajudar no desenvolvimento
           do <strong>Above The Sea</strong>
           extremamente grato por tantas pessoas terem generosamente oferecido seu
-          tempo!<br />
-          <br>
+          tempo!
+          
           Se você gostaria de se voluntariar para Above The Sea, leia as
-          informações abaixo antes de se inscrever.<br />
-        </p>
-        <p>
+          informações abaixo antes de se inscrever.
+        
+      
           Você só deve se voluntariar para
-          <strong>Above The Sea</strong> se:<br />
+          <strong>Above The Sea</strong> se:
 
-          Você tem pelo menos 18 anos.<br />
+          Você tem pelo menos 18 anos.
           Você pode me mostrar exemplos de seus trabalhos anteriores.<br />
           Você está ciente de que correrá o risco de ser substituído ou expulso
           caso não tenha compromisso com o projeto.<br />
         </p>
 
-      </div>
+      
+     
+    </section>
+    <section>
       <form id="voluntario">
         <label for="nomesobrenome">Nome e Sobrenome:</label><br />
         <input type="text" id="nomesobrenome" class="input-padrao" required />
@@ -92,25 +101,27 @@
         <label for="mensagem">Mensagem</label><br />
         <textarea cols="50" rows="5" id="mensagem" class="input-padrao" required></textarea>
 
+        <Div class="preferecontato">
+
         <legend>Como prefere o nosso contato?</legend>
-        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" />Email</label>
-
-        <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
-            id="radio-telefone" />Telefone</label>
-
-        <label for="radio-Whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-Whatsapp"
-            checked />WhatsApp</label>
+        
+        <div class="checkboxcontato">
+        </class=><label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" />Email</label>
+        <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone" />Telefone</label>
+        <label for="radio-Whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-Whatsapp" checked />WhatsApp</label></div>
         <legend>Qual horário prefere ser atendido?</legend>
+      </Div>
         <select class="select">
           <option>Manhã</option>
           <option>Tarde</option>
           <option>Noite</option>
         </select>
-        <label class="checkbox"><input type="checkbox" checked /> Gostaria de receber nossas noticias
-          por email?</label>
-        <input type="submit" value="Enviar Formulario" class="enviar" />
+                  <input type="submit" value="Enviar Formulario" class="enviar" />
+                  <label class="checkbox"><input type="checkbox" checked /> Gostaria de receber nossas noticias
+                    por email?</label>
       </form>
     </section>
+  </div>
   </main>
    <footer>
     <!-- <img src="imagens/img footer.png" alt="Redes sociais"> -->

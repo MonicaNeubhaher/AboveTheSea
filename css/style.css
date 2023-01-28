@@ -3,18 +3,26 @@
 
 
 * {
-   /* font-family: 'Cinzel Decorative', cursive;*/
    font-family: 'Philosopher', sans-serif;
 }
 
+body{
+/*   background-color: antiquewhite;*/
+    background-color: #9cdbf3;  /*fundo oficial*/
+}
+
+/*
+estilização do backgroun com fundo gradiente
+main{
+    background-image: linear-gradient(antiquewhite, #4cb3d381);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+}*/
 
 html {
     height: 100%;
-}
-
-body {
-    background-color: #9cdbf3;
-    
 }
 
 .container {
@@ -32,16 +40,16 @@ p {
 
 /* definição do h1 e h3 para título e sub-título das páginas*/
 h1 {
-  /* font-family: 'Aclonica';*/
+    font-family: 'Philosopher';
     font-weight: 600;
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 h3 {
-/*    font-family: 'Aclonica';*/
+    font-family: 'Philosopher';
     font-weight: 500;
     font-size: 26px;
     text-align: center;
@@ -71,7 +79,7 @@ h3 {
 footer {
     width: 100%;
     padding: 3rem 0;
-    background-color: #4cb3d381;
+    background-color: #4cb3d386;
 }
 
 #footer {
@@ -99,3 +107,4 @@ footer {
         gap: 10px;
     }
 }
+

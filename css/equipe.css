@@ -2,7 +2,7 @@
 figure {
     display: table;
     text-align: center;
-    font-family: 'Cherry Cream Soda';
+    margin-top:4rem;
 }
 
 figcaption {
@@ -12,11 +12,11 @@ figcaption {
 
 div.figure {
     display: flex;
+    margin-left:4rem;
+    margin-right:4rem;
+
 }
 
-main p {
-    font-family: 'Cherry Cream Soda';
-    text-align: justify;
-    margin: 2rem;
-   /* max-width: 40rem;*/
+figure img:hover {
+    transform: scale(1.2);
 }

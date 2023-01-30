@@ -1,0 +1,65 @@
+/* definição da página Index*/
+#atualizacoes {
+    display: flex;
+/*    font-family: 'Cherry Cream Soda';*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 20px;
+}
+
+@media (max-width:720px) {
+    #atualizacoes {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 10px;
+    }
+}
+
+#atualizacoes nav {
+    display: block;
+    background-color: #9cdbf3;
+}
+
+
+#lista_arquivos {
+    border: rgb(137, 135, 135) 1px solid;
+    background-color: #9cdbf3;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+#lista_arquivos p {
+    background-color: #9cdbf3;
+    padding: 10px;
+}
+
+#lista_arquivos nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#lista_arquivos nav ul li {
+    padding-bottom: 20px;
+}
+
+#lista_arquivos nav ul li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+}
+
+.itens {
+    text-align: center;
+}
+
+main p {
+/*    font-family: 'Cherry Cream Soda';*/
+    text-align: justify;
+    margin: 2rem;
+    max-width: 40rem;*
+}

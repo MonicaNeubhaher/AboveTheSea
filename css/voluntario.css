@@ -1,74 +1,93 @@
-main section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.textos-voluntario {
- text-align: center;
- 
+main{
+    margin:3rem 0;
+    padding:3rem 0;
 
 }
-form{
+
+main section{
     display:flex;
-    flex-direction: column;
-    margin:0 auto;
+    justify-content: center;
+    justify-items: center;
+    margin:1rem;
+    gap:2rem;
 }
 
-#voluntario form{
-    margin: 40px 0;
+#textovoluntario{
+
+
+
+}
+    
+    
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color:#9cdbf3;
+    border-radius: 16px;
+    padding: 1.5rem 40px;
+  }
+
+  label {
+        position: relative;
+  }
+
+  label:not(:first-of-type){
+    margin-top: 1rem;
+  }
+  
+  
+  input {
+    padding: .2rem 1.5rem;
+  }
+  
+  .helper-text {
+    display: none;
+    font-size: .8rem;
+    color: rgb(255, 2, 2);
+    margin: 0%;
+  }
+  
+  .orientacao {
+    margin-top: 1.5rem;
+    font-size: .7rem;
+  }
+  
+#legend1{
+    padding-top: 20px;
+    margin-bottom: 0;
+
     
 }
+#legend2{
+    padding-top: 20px;
 
-label {
-    align-items: center;
-
-
-}
-
-.input-padrao {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 90%;
 }
 
 option{
-    text-align: center;
-    margin:2rem 0;
-    padding-top: px;   
+    padding-top: 5px;
+}
+legend, select, option{
+    margin:1rem 0;
+    margin-right: 1rem;
 }
 
-legend{
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
-.preferecontato div{
-   align-items: center
-}
-
-.checkboxcontato{
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly
-
-}
-
-.checkbox{
-    padding-top: 20px;
-    padding-bottom: 20px;
+.checkbox {
+    margin: 20px 0 ;
 }
 
 .select{
-    padding-top: 0;
-    width: auto;   
+    gap: 1rem;
+    margin-top: 0px;
     margin-bottom:1rem;
+    margin-right: 2rem;
+    background-color: antiquewhite;
 }
 
-
-.enviar {
+#enviar {
     padding: 15px 0;
-    padding-top: 10px;
     background: orange;
     color: white;
     font-weight: bold;
@@ -77,11 +96,45 @@ legend{
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
+    margin-right: 2rem;
 }
 
-.enviar:hover {
+#enviar:hover {
     background: greenyellow;
     transform: scale(1.2);
 }
 
+main p {
+    text-align: justify;
+    margin: 2rem;
+}
 
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #2367b6;
+  }
+  
+  input.error {
+    border: solid 2px #e80a0a;
+    background-color: #CCBBBB;
+    color: #e12020;
+  }
+  
+  input.correct {
+    background-color: #f0f4f0;
+    border: solid 2px #14b614;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
+  }

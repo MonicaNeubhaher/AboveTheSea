@@ -1,0 +1,22 @@
+/*definição das imagens na página da Equipe*/
+figure {
+    display: table;
+    text-align: center;
+    margin-top:4rem;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+}
+
+div.figure {
+    display: flex;
+    margin-left:4rem;
+    margin-right:4rem;
+
+}
+
+figure img:hover {
+    transform: scale(1.2);
+}

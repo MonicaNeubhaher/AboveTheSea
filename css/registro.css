@@ -2,7 +2,16 @@
     display: flex;
     justify-content: center;
     width: auto;
-}
+ }
+
+/*form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: lightgray;
+    border-radius: 16px;
+    padding: 1.5rem 40px;
+}*/
 
 .input-padrao {
     display: block;
@@ -19,7 +28,7 @@
     color: #fff;
 }
 
-#form_login label{
+#form_login label {
     font-size: 14px;
 }
 
@@ -84,29 +93,42 @@
 /* ---------- Estilos dinâmicos ---------- */
 .required-popup::after {
     content: "*Campo obrigatório";
-    position: absolute;
+    position:absolute;
     top: 0;
-    right: 0;
+    right:0;
+    left: 8.7rem;
     color: #DFDFDF;
     font-size: .65rem;
     padding: .2rem .3rem;
-    width: auto;
-    display: block;
-    background-color: #202020;
-}
+    width: 6rem;
+    display:block;
+ }
 
 input.error {
-   border: solid 1px #992020;
+    border: solid 1px #992020;
     background-color: #CCBBBB;
     color: #662020;
 }
 
-input.correct
-{
+input.correct {
     background-color: antiquewhite;
     border: solid 1px black;
 }
 
 .visible {
     display: block;
+}
+
+label {
+    margin-bottom: .2rem;
+    position: relative;
+}
+
+label:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+.orientacao {
+    margin-top: 1.5rem;
+    font-size: .7rem;
 }

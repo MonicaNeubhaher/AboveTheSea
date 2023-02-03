@@ -36,20 +36,11 @@ article.innerHTML = `
   <P> Até a próxima!</P>
   <P> Equipe de "Above the Sea"." </P>
 
-           
 ` 
 console.log(article) 
 
 
+let main = document.querySelector("main");
 
-// 3. Adicionar o elemento à página
-//capturando elemento pai e guardar em uma varia
-let main = document.querySelector('main')
-
-//iserir no elemento pai
-main.appendChild(article) 
-
-
-
-
+main.appendChild(article)
 

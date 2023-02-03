@@ -53,7 +53,7 @@
 }
 
 #logar {
-    background-color: #a18181;
+    /* background-color: #a18181; */
     width: 15rem;
     height: 26rem;
     margin: 1rem;
@@ -62,7 +62,7 @@
 }
 
 #registrar {
-    background-color: #a18181;
+    /* background-color: #a18181; */
     width: 15rem;
     height: 26rem;
     margin: 1rem;
@@ -97,7 +97,7 @@
     top: 0;
     right:0;
     left: 8.7rem;
-    color: #DFDFDF;
+    color: #a18181;
     font-size: .65rem;
     padding: .2rem .3rem;
     width: 6rem;

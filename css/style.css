@@ -108,3 +108,15 @@ footer {
     }
 }
 
+#usuario_logado{
+    display:block;
+    background-color: #4cb3d386;
+    border-radius: 15px;
+    width:auto;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: right;
+    font-size: 12px;
+    font-family: 'Ms Sans Serif';
+    right: 0 auto;
+}

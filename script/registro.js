@@ -1,6 +1,12 @@
-// ---------- Definindo uma variável global ----- //
+// function myFunction2() {
+//   var paragrafo = document.querySelector("#usuario_logado");
+//     if (sessionStorage.getItem('valueText') == null) {
+//       paragrafo.textContent = "Usuário logado: não logado"
+//     } else {
+//       paragrafo.textContent = "Usuário logado: " + sessionStorage.getItem('valueText');
+//     }
+//   }
 
-var msg_email_logado = ""
 
 // ---------- FUNÇÃO MOSTRAR SENHA -------------- //
 
@@ -178,7 +184,12 @@ confirmaSenhaInput.addEventListener("blur", (e) => {
 
 // ---------- EVITAR ENVIO DO FORMULÁRIO ---------- //
 
+var msg_usuario_logado = document.querySelector("#usuario_logado")
+
+let msg_email_logado = "";
+
 let btnEnviar = document.querySelector(".enviar");
+
 let inputsCorretos = {
   emailLogin: false,
   senhaLogin: false,
@@ -194,11 +205,14 @@ btnEnviar.addEventListener("click", (e) => {
     if (inputsCorretos.senhaLogin == false) {
       e.preventDefault()
       // não enviar se estiver faltando a senha
+      msg_usuario_logado.innerText = "Usuário logado: não logado"
       alert("Precisa preencher as informações de login corretamente.")
     } else {
       // Enviar formulário
       msg_email_logado = emailInput.value
+      msg_usuario_logado.innerText = "Usuário logado: " + msg_email_logado.value
       alert("Login enviado com sucesso: " + msg_email_logado)
+      sessionStorage.setItem('valueText', msg_email_logado);
     }
   } else {
     if (inputsCorretos.emailRegistro == true) {
@@ -209,25 +223,22 @@ btnEnviar.addEventListener("click", (e) => {
       ) {
         // Qualquer um dos campos que tiver informação errada, não enviar
         e.preventDefault()
+        msg_usuario_logado.innerText = "Usuário logado: não logado"
         alert("Precisa preencher as informações de registro corretamente.")
       } else {
-         // Enviar formulário de registro
+        // Enviar formulário de registro
         msg_email_logado = emailRegistroInput.value
+        msg_usuario_logado.innerText = "Usuário logado: " + msg_email_logado
         alert("Registro enviado com sucesso: " + msg_email_logado)
+        sessionStorage.setItem('valueText', msg_email_logado);
+
       }
     } else {
       e.preventDefault()
+      msg_usuario_logado.innerText = "Usuário logado: não logado"
       alert("Precisa preencher as informações para Login ou Registro orretamente.")
     }
   }
-  })
 
-// --------- inserindo o usuário logado no header --------- //
+})
 
-let usuario_logado = document.querySelector("p");
-
-console.log(usuario_logado);
-console.log(usuario_logado.innerText);
-console.log(msg_email_logado)
-
-usuario_logado.innerText = "Usuário logado: " + emailInput.value

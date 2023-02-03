@@ -11,17 +11,21 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/doacoes.css" />
 
-   <!-- Links do Google Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400;1,700&display=swap"
-     rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
- 
+  <script src="/script/script.js" defer></script>
+  <script src="/script/doacoes.js" defer></script>
+
+  <!-- Links do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
   <title>Doações</title>
 </head>
 
-<body>
+<body onload="myFunction2()">
+
   <header class="">
 
     <section class="container header">
@@ -55,9 +59,11 @@
     </section>
   </header>
 
+  <span id="usuario_logado">Usuário logado:</span>
+
   <h1>DOAÇÕES</h1>
   <main>
-     <div class="container_doacoes">
+    <div class="container_doacoes">
       <p>
         Somos uma equipe nova no mundo gamer e nosso objetivo é colocar no
         mercado um jogo dinâmico onde você faz parte do projeto com sugestões,
@@ -74,14 +80,15 @@
       <br>
       <br>
       <p>
-         <a href="patreon.html">https://patreon.com/abovethesea</a>
+        <a id="link_patreon" onclick="patreon()">https://patreon.com/abovethesea</a>
       </p>
       <br>
       <br>
       <br>
       <br>
-   </div>
+    </div>
   </main>
+
 
   <footer>
     <section class="container_doacoes">

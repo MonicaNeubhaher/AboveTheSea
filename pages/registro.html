@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/registro.css" />
 
+  <script src="/script/script.js" defer></script>
   <script src="/script/registro.js" defer></script>
 
   <!-- Links do Google Fonts -->
@@ -20,12 +21,12 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <title>Registro</title>
+  <title>Entrar</title>
 </head>
 
 <!-- <body background="imagens/imgfundo.png"> -->
 
-<body>
+<body onload="myFunction2()">
   <header class="">
     <section class="container header">
       <div id="banner">
@@ -52,13 +53,12 @@
         <a class="btn_entrar" href="registro.html">Entrar</a>
       </div>
     </section>
-    <p>
-      Usuário logado:
-    </p>
 
-  </header>
+    </header>
 
-  <!-- <main class="container"> -->
+    <span id="usuario_logado">Usuário logado:</span>
+
+    <!-- <main class="container"> -->
     <h1>LOGIN</h1>
     <main>  
     <section>
@@ -124,7 +124,7 @@
         </form>
       </div>
     </section>
-  </main>
+   </main>
 
   <footer>
     <section class="container">

@@ -2,18 +2,18 @@
 // 1. criar o elemento
 // recebe a tag do elemento que queremos criar elemento pai
 
-let article = document.createElement("article") 
+let section = document.createElement("section") 
 
  //- apenas para testar
 
-console.log(article) 
+console.log(section) 
 
 
 // 2. Popular o elemento ( iserir informaçõe no elemento)
 
 // copia e cola as tags(postagem).
 
-article.innerHTML = `
+section.innerHTML = `
 <h3>Postado em 21 de novembro de 2022</h3>
 <p>
   "Novas Atualizações na História de "Above the Sea" - Um Jogo de RPG Musical Épico! </p>
@@ -37,10 +37,10 @@ article.innerHTML = `
   <P> Equipe de "Above the Sea"." </P>
 
 ` 
-console.log(article) 
+console.log(section) 
 
 
 let main = document.querySelector("main");
 
-main.appendChild(article)
+main.appendChild(section)
 

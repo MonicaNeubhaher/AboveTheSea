@@ -1,3 +1,13 @@
+// function myFunction2() {
+//   var paragrafo = document.querySelector("#usuario_logado");
+//     if (sessionStorage.getItem('valueText') == null) {
+//       paragrafo.textContent = "Usuário logado: não logado"
+//     } else {
+//       paragrafo.textContent = "Usuário logado: " + sessionStorage.getItem('valueText');
+//     }
+//   }
+
+
 // ---------- FUNÇÃO MOSTRAR SENHA -------------- //
 
 function myFunction(input) {
@@ -16,7 +26,8 @@ function togglePopup(input, label) {
   // Mostrar popup de campo obrigatório
   input.addEventListener("focus", () => {
     label.classList.add("required-popup");
-    input.style.backgroundColor;
+    console.log(label.classList.length)
+    //console.log(label.classList.value)
   });
 
   // Ocultar popup de campo obrigatório
@@ -51,10 +62,12 @@ emailInput.addEventListener("change", (e) => {
   if (valor.includes("@") && valor.includes(".com")) {
     // Adicionar estilos dinâmicos se o valor estiver correto
     estilizarInputCorreto(emailInput, emailHelper);
+    inputsCorretos.emailLogin = true;
   } else {
     // Adicionar estilos dinâmicos se o valor tiver menos de 3 caracteres
     emailHelper.innerText = "Precisa inserir um email válido";
     estilizarInputIncorreto(emailInput, emailHelper);
+    inputsCorretos.emailLogin = false;
   }
 })
 
@@ -71,9 +84,11 @@ senhaInput.addEventListener("blur", (e) => {
   if (valor == "") {
     senhaHelper.innerText = "Precisa inserir uma senha"
     estilizarInputIncorreto(senhaInput, senhaHelper)
+    inputsCorretos.senhaLogin = false;
   }
   else {
     estilizarInputCorreto(senhaInput, senhaHelper)
+    inputsCorretos.senhaLogin = true;
   }
 })
 
@@ -93,9 +108,11 @@ usernameInput.addEventListener("change", (e) => {
     // Adicionar estilos dinâmicos se o valor tiver menos de 3 caracteres
     usernameHelper.innerText = "Seu usuário precisa ter 3 ou mais caracteres";
     estilizarInputIncorreto(usernameInput, usernameHelper)
+    inputsCorretos.nomeRegistro = false;
   } else {
     // Adicionar estilos dinâmicos se o valor estiver correto
     estilizarInputCorreto(usernameInput, usernameHelper);
+    inputsCorretos.nomeRegistro = true;
   }
 })
 
@@ -113,10 +130,12 @@ emailRegistroInput.addEventListener("change", (e) => {
   if (valor.includes("@") && valor.includes(".com")) {
     // Adicionar estilos dinâmicos se o valor estiver correto
     estilizarInputCorreto(emailRegistroInput, emailRegistroHelper);
+    inputsCorretos.emailRegistro = true;
   } else {
     // Adicionar estilos dinâmicos se o valor tiver menos de 3 caracteres
     emailRegistroHelper.innerText = "Precisa inserir um e-mail válido";
     estilizarInputIncorreto(emailRegistroInput, emailRegistroHelper);
+    inputsCorretos.emailRegistro = false;
   }
 })
 
@@ -134,9 +153,11 @@ senhaInputRegistro.addEventListener("blur", (e) => {
   if (valor == "") {
     senhaHelperRegistro.innerText = "Precisa inserir uma senha"
     estilizarInputIncorreto(senhaInputRegistro, senhaHelperRegistro)
+    inputsCorretos.senhaRegistro = false;
   }
   else {
     estilizarInputCorreto(senhaInputRegistro, senhaHelperRegistro)
+    inputsCorretos.senhaRegistro = true;
   }
 })
 
@@ -153,9 +174,71 @@ confirmaSenhaInput.addEventListener("blur", (e) => {
   if (valor == senhaInputRegistro.value) {
     confirmaSenhaHelper.innerText = "Precisa inserir uma senha"
     estilizarInputCorreto(confirmaSenhaInput, confirmaSenhaHelper)
-
+    inputsCorretos.confirmaSenhaRegistro = true;
   } else {
     confirmaSenhaHelper.innerText = "As senhas precisam ser iguais"
     estilizarInputIncorreto(confirmaSenhaInput, confirmaSenhaHelper)
+    inputsCorretos.confirmaSenhaRegistro = false;
   }
 })
+
+// ---------- EVITAR ENVIO DO FORMULÁRIO ---------- //
+
+var msg_usuario_logado = document.querySelector("#usuario_logado")
+
+let msg_email_logado = "";
+
+let btnEnviar = document.querySelector(".enviar");
+
+let inputsCorretos = {
+  emailLogin: false,
+  senhaLogin: false,
+  nomeRegistro: false,
+  emailRegistro: false,
+  senhaRegistro: false,
+  confirmaSenhaRegistro: false
+}
+
+btnEnviar.addEventListener("click", (e) => {
+
+  if (inputsCorretos.emailLogin == true) {
+    if (inputsCorretos.senhaLogin == false) {
+      e.preventDefault()
+      // não enviar se estiver faltando a senha
+      msg_usuario_logado.innerText = "Usuário logado: não logado"
+      alert("Precisa preencher as informações de login corretamente.")
+    } else {
+      // Enviar formulário
+      msg_email_logado = emailInput.value
+      msg_usuario_logado.innerText = "Usuário logado: " + msg_email_logado.value
+      alert("Login enviado com sucesso: " + msg_email_logado)
+      sessionStorage.setItem('valueText', msg_email_logado);
+    }
+  } else {
+    if (inputsCorretos.emailRegistro == true) {
+      if (
+        inputsCorretos.nomeRegistro == false ||
+        inputsCorretos.senhaRegistro == false ||
+        inputsCorretos.confirmaSenhaRegistro == false
+      ) {
+        // Qualquer um dos campos que tiver informação errada, não enviar
+        e.preventDefault()
+        msg_usuario_logado.innerText = "Usuário logado: não logado"
+        alert("Precisa preencher as informações de registro corretamente.")
+      } else {
+        // Enviar formulário de registro
+        msg_email_logado = emailRegistroInput.value
+        msg_usuario_logado.innerText = "Usuário logado: " + msg_email_logado
+        alert("Registro enviado com sucesso: " + msg_email_logado)
+        sessionStorage.setItem('valueText', msg_email_logado);
+
+      }
+    } else {
+      e.preventDefault()
+      msg_usuario_logado.innerText = "Usuário logado: não logado"
+      alert("Precisa preencher as informações para Login ou Registro orretamente.")
+    }
+  }
+
+})
+

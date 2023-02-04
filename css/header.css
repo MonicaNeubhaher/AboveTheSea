@@ -1,7 +1,9 @@
 header{
     width:100%;
     padding:1rem 0; /*estava 3rem*/
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-image: linear-gradient(antiquewhite, #4cb3d381);
+
  
 
 }
@@ -9,7 +11,7 @@ header{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding:2rem 0;
+    padding:1rem 0;
     justify-items: center;
     align-items: center;
 }

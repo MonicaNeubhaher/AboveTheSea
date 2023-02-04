@@ -105,6 +105,12 @@ header{
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+    
+  }
+
+  .dropbtn:hover {
+    background: #333;
+    color: #fff;
   }
   
   .dropdown {

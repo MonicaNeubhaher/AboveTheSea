@@ -25,17 +25,48 @@ html {
     height: 100%;
 }
 
+
+/* deixar o header fixo para rolagem da paginas com as postagens */
+#menu{
+    position: fixed;
+    top: 0;
+    bottom: auto
+}
+
+#titulopubli{
+    top:120px;
+    background-color:  #9cdbf3;
+    position: fixed;
+    left: 0;
+    width: 100%
+    
+}
+
+
+/* deixar o inicio da pagina logo abaixo do header fixo */
+#paginapublicacoes{
+    padding-top: 12rem;
+}
+
+#container_index{
+    max-width: 1040px;
+    margin-left: 150px;
+    mar
+
+}
+
+
 .container {
     max-width: 1040px;
-    margin: 0 auto;
-    padding: 0 2%;
+    margin:  auto;
+    padding: 0 %;
 }
 
 p {
     font-size: 16px;
     line-height: 22px;
     font-family: 'Aclonica', sans-serif;
-   
+
 }
 
 /* definição do h1 e h3 para título e sub-título das páginas*/

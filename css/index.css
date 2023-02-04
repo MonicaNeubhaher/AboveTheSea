@@ -3,29 +3,15 @@
    
     display: flex;
 /*    font-family: 'Cherry Cream Soda';*/
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 10px;
-    gap: 20px;
+  
+    
 }
 .container{
     padding-left: 0;
 }
 
-@media (max-width:720px) {
-    #atualizacoes {
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        gap: 10px;
-    }
-}
 
-#atualizacoes nav {
-    display: block;
-    background-color: #dcdddd;
-}
-
+/* barra de arquivos*/
 #lista_arquivos {
     position: fixed;
     left: 1000PX;

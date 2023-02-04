@@ -40,7 +40,9 @@ section.innerHTML = `
 console.log(section) 
 
 
-let main = document.querySelector("main");
+let main = document.querySelector("#publicacoes");
+
+console.log(main)
 
 main.appendChild(section)
 

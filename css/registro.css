@@ -30,6 +30,8 @@
 
 #form_login label {
     font-size: 14px;
+    display: block;
+    width: 100%;
 }
 
 .enviar {
@@ -96,7 +98,7 @@
     position:absolute;
     top: 0;
     right:0;
-    left: 8.7rem;
+   /* left: 8.7rem; */
     color: #a18181;
     font-size: .65rem;
     padding: .2rem .3rem;

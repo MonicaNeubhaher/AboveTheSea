@@ -1,31 +1,47 @@
 /* definição da página Index*/
-/* #atualizacoes{ */
+#atualizacoes {
     
 /*    font-family: 'Cherry Cream Soda';*/
+  
+    
+}
+
+
+    
+
+
+
+
 
 /* barra de arquivos*/
 #lista_arquivos {
-    display: flex;
     position: absolute;
-    /* top: calc(50% - 250px); */
+    top: calc(50% - 250px);
     left: calc(50% - -500px);
     bottom: auto;
     right: auto;
-    /* width: 300px; */
+    width: 300px;
     height: 200px;
     margin: auto;
     overflow: auto;;   
-    width: 10%;
-    border: rgb(137, 135, 135) 1px solid;
-    margin: 10px;
-    padding: 14px;
-
+   width: 10%;
+   border: rgb(137, 135, 135) 1px solid;
+   margin: 10px;
+   padding: 30px;
+   
 }
 
 #arqui{
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#lista_arquivos p {
+    background-color: #a18181;
+    padding: 10px;
 }
 
 #lista_arquivos nav ul {
@@ -35,7 +51,7 @@
 }
 
 #lista_arquivos nav ul li {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 #lista_arquivos nav ul li a {
@@ -47,9 +63,9 @@
     text-align: center;
 }
 
-main {
+main p {
 /*    font-family: 'Cherry Cream Soda';*/
 display: flex;
 flex-direction: column;
 text-align: justify;
-}
+   

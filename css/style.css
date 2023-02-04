@@ -11,6 +11,15 @@ body{
     background-color: #9cdbf3;  /*fundo oficial*/
 }
 
+/*
+estilização do backgroun com fundo gradiente
+main{
+    background-image: linear-gradient(antiquewhite, #4cb3d381);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+}*/
 
 html {
     height: 100%;
@@ -41,15 +50,16 @@ html {
 
 #container_index{
     max-width: 1040px;
-    margin-left: 50px;
-    
+    margin-left: 150px;
+    mar
+
 }
 
 
 .container {
     max-width: 1040px;
     margin:  auto;
-    padding: 0 ;
+    padding: 0 %;
 }
 
 p {
@@ -129,3 +139,15 @@ footer {
     }
 }
 
+#usuario_logado{
+    display:block;
+    background-color: #4cb3d386;
+    border-radius: 15px;
+    width:auto;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: right;
+    font-size: 12px;
+    font-family: 'Ms Sans Serif';
+    right: 0 auto;
+}

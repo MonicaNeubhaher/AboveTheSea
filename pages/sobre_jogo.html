@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/sobre_dev.css" />
 
+  <script src="/script/script.js" defer></script>
+
   <!-- Links do Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +23,8 @@
   <title>Sobre o jogo</title>
 </head>
 
-<body>
+<body onload="myFunction2()">
+  
   <header class="">
     <section class="container header">
       <div id="banner">
@@ -50,22 +53,31 @@
     </section>
   </header>
 
+  <span id="usuario_logado">Usuário:</span>
+
   <main>
     <h1>Personagens</h1>
-    <div id="jogo">
-      <img src="/imagens/My project (1).png" alt="">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+    <div class="jogo">
+
+      <span class="personagem1">NIT
+        <img src="/imagens/My project (1).png" width="15%" alt="" title="NIT">
+      </span>
+      <span class="personagem2">ATARGATIS
+        <img src="/imagens/My project (2).png" width="15%" alt="" title="ATARGATIS">
+      </span>
+      <span class="personagem3">FORASTEIRO
+        <img src="/imagens/My project (3).png" width=15%" title="FORASTEIRO">
+      </span>
+      <span class="personagem3">MONIZ
+        <img src="/imagens/My project.png" width="15%" title="MONIZ">
+      </span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     </div>
   </main>
 

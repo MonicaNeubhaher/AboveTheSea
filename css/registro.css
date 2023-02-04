@@ -40,9 +40,10 @@
 }
 
 .enviar:hover {
-    background: greenyellow;
-    transform: scale(1.2);
+    background: #333;
+    color: white;
 }
+
 
 #logar {
     /* background-color: #a18181; */

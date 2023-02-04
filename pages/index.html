@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/index.css" />
 
+  <script src="/script/script.js" defer></script>
   <script src="/script/publicacoes.js" defer></script>
 
   <!-- Links do Google Fonts -->
@@ -23,7 +24,8 @@
   <title>Home</title>
 </head>
 
-<body>
+<body onload="myFunction2()">
+  
   <header class="">
 
     <section class="container header">
@@ -33,7 +35,7 @@
         <img style="height: 100px; width:100px;" src="/imagens/logo2.png">
 
       </div>
-      
+
       <nav>
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
@@ -58,66 +60,70 @@
 
     </section>
   </header>
-<div class="container">
-  <main id="publicacoes">
-    <h1 id="posth">ATUALIZAÇÕES</h1>
-    <div class="container">
-      <div id="atualizacoes">
-        <section>
-          <h3>Postado em fevereiro de 2023</h3>
-          <p>
-            Se você tentar usar o iniciar o jogo e não funcionar, não me envie
-            um e-mail relatando como um “bug”. Não há nada que eu possa fazer.
-            O executável nunca muda e a maneira como carrego a versão mais
-            recente do jogo também nunca muda.
-          </p>
 
-          <p>
-            Portanto, se você não conseguir usar , baixe a atualização mais
-            recente, não tenho ideia de qual é o problema e não há nada que eu
-            possa fazer a respeito.
-          </p>
+  <span id="usuario_logado">Usuário:</span>
 
-          <p>
-            Sua única opção é tentar usar um dos outros links de download e se
-            isso não funcionar, aguarde até que a próxima compilação seja
-            lançada.
-          </p>
 
-          <p>
-            Não sei mais o que te dizer. Na verdade, lancei uma nova versão do
-            launcher hoje.
-          </p>
+  <div class="container">
+    <main id="publicacoes">
+      <h1 id="posth">ATUALIZAÇÕES</h1>
+      <div class="container">
+        <div id="atualizacoes">
+          <section>
+            <h3>Postado em fevereiro de 2023</h3>
+            <p>
+              Se você tentar usar o iniciar o jogo e não funcionar, não me envie
+              um e-mail relatando como um “bug”. Não há nada que eu possa fazer.
+              O executável nunca muda e a maneira como carrego a versão mais
+              recente do jogo também nunca muda.
+            </p>
 
-          <p>
-            O que mudou? Apenas uma coisa: o texto das mensagens de erro. As
-            mensagens de erro agora são extremamente curtas e informam
-            exatamente o que fazer se o iniciador não estiver funcionando:
-            apenas desista do iniciador e use um dos links de download
-            alternativos!
-          </p>
-        </section>
+            <p>
+              Portanto, se você não conseguir usar , baixe a atualização mais
+              recente, não tenho ideia de qual é o problema e não há nada que eu
+              possa fazer a respeito.
+            </p>
 
-        <div id="lista_arquivos">
-          <div>
-            <p id="paragrafolistaarquivos">ARQUIVOS</p>
-          </div>
-          <div>
-            <nav class="arquivos">
-              <ul>
-                
-                <li><a href="fevereiro.html"> Fevereiro - 2023 </a></li>
-                <li><a href="janeiro.html"> Janeiro - 2023 </a></li>
-                <li><a href="dezembro.html"> Dezembro - 2022 </a></li>
-                <li><a href="novembro.html"> Novembro - 2022 </a></li>
-              </ul>
-            </nav>
+            <p>
+              Sua única opção é tentar usar um dos outros links de download e se
+              isso não funcionar, aguarde até que a próxima compilação seja
+              lançada.
+            </p>
+
+            <p>
+              Não sei mais o que te dizer. Na verdade, lancei uma nova versão do
+              launcher hoje.
+            </p>
+
+            <p>
+              O que mudou? Apenas uma coisa: o texto das mensagens de erro. As
+              mensagens de erro agora são extremamente curtas e informam
+              exatamente o que fazer se o iniciador não estiver funcionando:
+              apenas desista do iniciador e use um dos links de download
+              alternativos!
+            </p>
+          </section>
+
+          <div id="lista_arquivos">
+            <div>
+              <p id="paragrafolistaarquivos">ARQUIVOS</p>
+            </div>
+            <div>
+              <nav class="arquivos">
+                <ul>
+
+                  <li><a href="fevereiro.html"> Fevereiro - 2023 </a></li>
+                  <li><a href="janeiro.html"> Janeiro - 2023 </a></li>
+                  <li><a href="dezembro.html"> Dezembro - 2022 </a></li>
+                  <li><a href="novembro.html"> Novembro - 2022 </a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-</div>
+    </main>
+  </div>
 
   <footer>
     <section class="container">
@@ -146,4 +152,5 @@
 </body>
 
 </html>
+
 </html>

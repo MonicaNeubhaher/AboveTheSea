@@ -2,34 +2,26 @@
     display: flex;
     justify-content: center;
     width: auto;
- }
-
-/*form {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    background-color: lightgray;
-    border-radius: 16px;
-    padding: 1.5rem 40px;
-}*/
+}
 
 .input-padrao {
     display: block;
     margin: 0 0 5px;
     padding: 10px 15px;
     width: 85%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     border-radius: 5px;
     border: solid 1px black;
 }
 
 .input-padrao:focus {
-    background: #333;
-    color: #fff;
+    background:  #ddd;;
+    /* color: #fff; */
 }
 
 #form_login label {
     font-size: 14px;
+    display: block;
 }
 
 .enviar {
@@ -93,16 +85,17 @@
 /* ---------- Estilos dinâmicos ---------- */
 .required-popup::after {
     content: "*Campo obrigatório";
-    position:absolute;
+    position: absolute;
     top: 0;
-    right:0;
-    left: 8.7rem;
-    color: #a18181;
+    right: 0;
+    color: #DFDFDF;
     font-size: .65rem;
     padding: .2rem .3rem;
-    width: 6rem;
-    display:block;
- }
+    width: auto;
+    display: block;
+    background-color: #2367b6;
+
+}
 
 input.error {
     border: solid 1px #992020;

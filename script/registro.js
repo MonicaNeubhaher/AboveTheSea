@@ -1,13 +1,3 @@
-// function myFunction2() {
-//   var paragrafo = document.querySelector("#usuario_logado");
-//     if (sessionStorage.getItem('valueText') == null) {
-//       paragrafo.textContent = "Usuário logado: não logado"
-//     } else {
-//       paragrafo.textContent = "Usuário logado: " + sessionStorage.getItem('valueText');
-//     }
-//   }
-
-
 // ---------- FUNÇÃO MOSTRAR SENHA -------------- //
 
 function myFunction(input) {
@@ -205,12 +195,12 @@ btnEnviar.addEventListener("click", (e) => {
     if (inputsCorretos.senhaLogin == false) {
       e.preventDefault()
       // não enviar se estiver faltando a senha
-      msg_usuario_logado.innerText = "Usuário logado: não logado"
+      msg_usuario_logado.innerText = "Usuário: não logado"
       alert("Precisa preencher as informações de login corretamente.")
     } else {
       // Enviar formulário
       msg_email_logado = emailInput.value
-      msg_usuario_logado.innerText = "Usuário logado: " + msg_email_logado.value
+      msg_usuario_logado.innerText = "Usuário: " + msg_email_logado.value
       alert("Login enviado com sucesso: " + msg_email_logado)
       sessionStorage.setItem('valueText', msg_email_logado);
     }
@@ -223,19 +213,19 @@ btnEnviar.addEventListener("click", (e) => {
       ) {
         // Qualquer um dos campos que tiver informação errada, não enviar
         e.preventDefault()
-        msg_usuario_logado.innerText = "Usuário logado: não logado"
+        msg_usuario_logado.innerText = "Usuário: não logado"
         alert("Precisa preencher as informações de registro corretamente.")
       } else {
         // Enviar formulário de registro
         msg_email_logado = emailRegistroInput.value
-        msg_usuario_logado.innerText = "Usuário logado: " + msg_email_logado
+        msg_usuario_logado.innerText = "Usuário: " + msg_email_logado
         alert("Registro enviado com sucesso: " + msg_email_logado)
         sessionStorage.setItem('valueText', msg_email_logado);
 
       }
     } else {
       e.preventDefault()
-      msg_usuario_logado.innerText = "Usuário logado: não logado"
+      msg_usuario_logado.innerText = "Usuário: não logado"
       alert("Precisa preencher as informações para Login ou Registro orretamente.")
     }
   }

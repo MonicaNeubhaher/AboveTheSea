@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="/css/reset.css" />
   <link rel="stylesheet" href="/css/voluntario.css" />
   <link rel="stylesheet" href="/css/style.css" />
+  <script src="/script/voluntario.js" defer></script>
 
-  <script src="/script/script.js" defer></script>
-  <script src="/script/doacoes.js" defer></script>
+
 
   <!-- Links do Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,41 +61,34 @@
     <h1>Voluntarie-se</h1>
     <section>
       <div>
-        <p>
-          Desde que este projeto começou em novembro de 2022, tive a sorte de ser
-          contatado por centenas de pessoas que desejam ajudar no desenvolvimento
-          do <strong>Above The Sea</strong>
-          extremamente grato por tantas pessoas terem generosamente oferecido seu
-          tempo!<br />
-          <br>
-          Se você gostaria de se voluntariar para Above The Sea, leia as
-          informações abaixo antes de se inscrever.<br />
-        </p>
-        <p>
-          Você só deve se voluntariar para
-          <strong>Above The Sea</strong> se:<br />
-
-          Você tem pelo menos 18 anos.<br />
-          Você pode me mostrar exemplos de seus trabalhos anteriores.<br />
-          Você está ciente de que correrá o risco de ser substituído ou expulso
-          caso não tenha compromisso com o projeto.<br />
-        </p>
-
+        <p> Caros amigos, Gostaríamos de convidá-los a se voluntariar para participar do desenvolvimento de um jogo incrível.</p> 
+        <p>Estamos procurando pessoas apaixonadas por jogos e interessadas em fazer parte de um projeto emocionante e desafiador.</p>
+        <p> Como voluntário, você terá a oportunidade de trabalhar com uma equipe de profissionais experientes e colaborar na criação de um jogo incrível. Além disso, você terá acesso a recursos e ferramentas valiosas para melhorar suas habilidades e adquirir novos conhecimentos.</p>
+        <p> Não importa se você é um programador experiente ou um iniciante, se você tem habilidades em design gráfico ou é bom em escrever histórias, temos um lugar para você na equipe. Nós valorizamos a diversidade e acreditamos que todas as opiniões e perspectivas são importantes para o sucesso do projeto.</p>
+        <p> Não perca mais tempo e se junte a nós nesta jornada incrível. Faça parte de um projeto que você pode se orgulhar e desfrute de uma experiência enriquecedora. Para se candidatar, por favor envie seu currículo para o endereço de e-mail e não se esqueça de incluir sua carta de motivação.</p>
+        <P> Estamos ansiosos para trabalhar com você!</P>
+        <P> Atenciosamente, Equipe de desenvolvimento do jogo.</P>
       </div>
-      <form id="voluntario">
-        <label for="nomesobrenome">Nome e Sobrenome:</label><br />
-        <input type="text" id="nomesobrenome" class="input-padrao" required />
 
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@domino.com.br" />
+      <form action="">
+        <label for="nomecom">*Nome completo:</label>
+        <input type="text" id="nomecom" name="nomecom">
+        <p id="nomecom-helper" class="helper-text">Mensagem de ajuda</p>
+    
+        <label for="emailcad">*E-mail:</label>
+        <input type="emailcad" id="emailcad" name="email">
+        <p id="emailcad-helper" class="helper-text">Mensagem de ajuda</p>
+    
 
-        <label for="telefone">Telefone:</label><br />
-        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx - xxxx" />
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" class="input-padrao" placeholde="(xx) xxxxx - xxxx" />
+        <p id="telefone-helper" class="helper-text">Mensagem de ajuda</p>
 
-        <label for="mensagem">Mensagem</label><br />
-        <textarea cols="50" rows="5" id="mensagem" class="input-padrao" required></textarea>
 
-        <legend>Como prefere o nosso contato?</legend>
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="50" rows="5" id="mensagem" class="input-padrao"></textarea>
+
+        <legend id="legend1">Como prefere o nosso contato?</legend>
         <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" />Email</label>
 
         <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
@@ -103,7 +96,7 @@
 
         <label for="radio-Whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-Whatsapp"
             checked />WhatsApp</label>
-        <legend>Qual horário prefere ser atendido?</legend>
+        <legend id="legend2">Qual horário período prefere ser contatado?</legend>
         <select class="select">
           <option>Manhã</option>
           <option>Tarde</option>
@@ -111,11 +104,13 @@
         </select>
         <label class="checkbox"><input type="checkbox" checked /> Gostaria de receber nossas noticias
           por email?</label>
-        <input type="submit" value="Enviar Formulario" class="enviar" />
+        
+        
+          <input type="submit" value="Enviar Formulario" id="enviar" />
       </form>
     </section>
   </main>
-   <footer>
+  <footer>
     <!-- <img src="imagens/img footer.png" alt="Redes sociais"> -->
     <section class="container">
       <div id="footer">

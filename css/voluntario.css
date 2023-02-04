@@ -1,40 +1,36 @@
-main{
-  margin:3rem 0;
-  padding:3rem 0;
+main {
+  margin: 3rem 0;
+  padding: 3rem 0;
 
 }
 
-main section{
-  display:flex;
+main section {
+  display: flex;
   justify-content: center;
   justify-items: center;
-  margin:1rem;
-  gap:2rem;
+  margin: 1rem;
+  gap: 2rem;
 }
 
-#textovoluntario{
+#textovoluntario {}
 
 
-
-}
-  
-  
 
 
 form {
   display: flex;
   flex-direction: column;
   width: 600px;
-  background-color:#9cdbf3;
+  background-color: #9cdbf3;
   border-radius: 16px;
   padding: 1.5rem 40px;
 }
 
 label {
-      position: relative;
+  position: relative;
 }
 
-label:not(:first-of-type){
+label:not(:first-of-type) {
   margin-top: 1rem;
 }
 
@@ -55,33 +51,37 @@ input {
   font-size: .7rem;
 }
 
-#legend1{
+#legend1 {
   padding-top: 20px;
   margin-bottom: 0;
 
-  
+
 }
-#legend2{
+
+#legend2 {
   padding-top: 20px;
 
 }
 
-option{
+option {
   padding-top: 5px;
 }
-legend, select, option{
-  margin:1rem 0;
+
+legend,
+select,
+option {
+  margin: 1rem 0;
   margin-right: 1rem;
 }
 
 .checkbox {
-  margin: 20px 0 ;
+  margin: 20px 0;
 }
 
-.select{
+.select {
   gap: 1rem;
   margin-top: 0px;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
   margin-right: 2rem;
   background-color: antiquewhite;
 }

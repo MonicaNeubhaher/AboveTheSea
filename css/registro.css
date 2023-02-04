@@ -9,14 +9,14 @@
     margin: 0 0 5px;
     padding: 10px 15px;
     width: 85%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     border-radius: 5px;
     border: solid 1px black;
 }
 
 .input-padrao:focus {
-    background: #333;
-    color: #fff;
+    background:  #ddd;;
+    /* color: #fff; */
 }
 
 #form_login label {
@@ -88,11 +88,13 @@
     position: absolute;
     top: 0;
     right: 0;
-    color: #a18181;
+    color: #DFDFDF;
     font-size: .65rem;
     padding: .2rem .3rem;
     width: auto;
     display: block;
+    background-color: #2367b6;
+
 }
 
 input.error {

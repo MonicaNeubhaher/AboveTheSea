@@ -1,4 +1,5 @@
 /* definição do texto e foto do desenvolvedor*/
+
 #desenvolvedor {
     display: flex;
     align-items: center;
@@ -14,5 +15,9 @@
 main p {
     text-align: justify;
     margin: 2rem;
+}
+
+#desenvolvedor img {
+    border-radius: 10rem;
 }
 

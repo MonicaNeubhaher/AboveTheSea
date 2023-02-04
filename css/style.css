@@ -11,16 +11,6 @@ body{
     background-color: #9cdbf3;  /*fundo oficial*/
 }
 
-/*
-estilização do backgroun com fundo gradiente
-main{
-    background-image: linear-gradient(antiquewhite, #4cb3d381);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 100%;
-}*/
-
 html {
     height: 100%;
 }

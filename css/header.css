@@ -1,7 +1,8 @@
 header{
     width:100%;
     padding:1rem 0; /*estava 3rem*/
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    background-image: linear-gradient(antiquewhite, #4cb3d381);
  
 
 }
@@ -9,13 +10,11 @@ header{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding:2rem 0;
+    padding:1rem 0;
     justify-items: center;
     align-items: center;
 }
 
-.header .banner {
-}
 .header .banner img{
     height: 100px; width:100px;
 }
@@ -48,11 +47,15 @@ header{
 
 .header ul li a{
     background-color:  #a18181;
+    border-radius: 5px;;
     text-decoration: none;
+    border-radius: 5px;
     padding: 1rem;
     margin:1rem;
-    color:antiquewhite;
-}
+    color: black;
+    font-weight: bold;
+  }
+
 .header ul .nav_li{
     display:flex;
     flex-direction: column;
@@ -72,8 +75,8 @@ header{
 .btn_entrar{
     background-color:  #a18181;
     text-decoration: none;
+    border-radius: 5px;
     padding: 1rem 2rem;
-    color: antiquewhite;
     margin:1rem;
     position: relative;
     top:-16px;
@@ -98,7 +101,18 @@ header{
 /*    font-size: 16px;*/
     line-height: 16px;
     border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+
+.dropbtn:hover {
+    background: #333;
+    color: #fff;
+  }
+
 
 .dropdown {
     position: relative;
@@ -114,6 +128,7 @@ header{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 5px;
 }
 
 .dropdown-content a {

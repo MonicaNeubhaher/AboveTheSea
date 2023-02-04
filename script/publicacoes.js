@@ -36,7 +36,7 @@ article.innerHTML = `
   <P> Até a próxima!</P>
   <P> Equipe de "Above the Sea"." </P>
 
-           
+
 ` 
 console.log(article) 
 

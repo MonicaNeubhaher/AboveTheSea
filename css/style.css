@@ -41,23 +41,22 @@ html {
 
 #container_index{
     max-width: 1040px;
-    margin-left: 150px;
-    mar
-
+    margin-left: 50px;
+    
 }
 
 
 .container {
     max-width: 1040px;
     margin:  auto;
-    padding: 0 %;
+    padding: 0 ;
 }
 
 p {
     font-size: 16px;
     line-height: 22px;
     font-family: 'Aclonica', sans-serif;
-   
+
 }
 
 /* definição do h1 e h3 para título e sub-título das páginas*/
@@ -69,10 +68,6 @@ h1 {
     text-transform: uppercase;
     margin: 1rem 0;
 }
-
-
-
-
 
 h3 {
     font-family: 'Philosopher';

@@ -51,15 +51,14 @@ html {
 #container_index{
     max-width: 1040px;
     margin-left: 150px;
-    mar
-
+    
 }
 
 
 .container {
     max-width: 1040px;
-    margin:  auto;
-    padding: 0 %;
+    margin: auto;
+    padding: 0; 
 }
 
 p {

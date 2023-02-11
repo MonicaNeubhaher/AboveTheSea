@@ -1,34 +1,22 @@
 /* definição da página Index*/
-#atualizacoes {
-    
-/*    font-family: 'Cherry Cream Soda';*/
-  
-    
-}
-
-
-    
-
-
-
-
+/* #atualizacoes{
+/*font-family: 'Cherry Cream Soda';*/
 
 /* barra de arquivos*/
 #lista_arquivos {
     position: absolute;
-    top: calc(50% - 250px);
-    left: calc(50% - -500px);
+    top: calc(58% - 250px);
+    left: calc(64% - -320px);
     bottom: auto;
     right: auto;
     width: 300px;
     height: 200px;
     margin: auto;
-    overflow: auto;;   
-   width: 10%;
-   border: rgb(137, 135, 135) 1px solid;
-   margin: 10px;
-   padding: 30px;
-   
+    overflow: auto;   
+    width: 10%;
+    border: rgb(137, 135, 135) 1px solid;
+    margin: 15px;
+    padding: 10px;
 }
 
 #arqui{
@@ -68,4 +56,4 @@ main p {
 display: flex;
 flex-direction: column;
 text-align: justify;
-   
+}

@@ -73,17 +73,30 @@ p {
 h1 {
     font-family: 'Philosopher';
     font-weight: 600;
-    font-size: 36px;
+    font-size: 26px;
     text-align: center;
     text-transform: uppercase;
-    margin: 1rem 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#posth{
+    font-family: 'Philosopher';
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 2rem 0;
 }
 
 h3 {
     font-family: 'Philosopher';
     font-weight: 500;
-    font-size: 26px;
-    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: lef;
     text-transform: uppercase;
     margin: 2rem 0;
 }

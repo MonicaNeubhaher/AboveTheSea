@@ -131,7 +131,7 @@ if(
 
     // qualquer um dos campos tiver informação errada, não enviar
 e.preventDefault()
-alert("Preencha todos os campos obrigatórios corretamente")
+alert("Preencha todos os campos obrigatórios corretamente!")
 
 
 }else {

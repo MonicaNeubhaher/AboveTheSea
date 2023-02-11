@@ -2,19 +2,19 @@
 // 1. criar o elemento
 // recebe a tag do elemento que queremos criar elemento pai
 
-let article = document.createElement("article") 
+let section = document.createElement("section") 
 
  //- apenas para testar
 
-console.log(article) 
+console.log(section) 
 
 
 // 2. Popular o elemento ( iserir informaçõe no elemento)
 
 // copia e cola as tags(postagem).
 
-article.innerHTML = `
-<h3>Postado em 21 de novembro de 2022</h3>
+section.innerHTML = `
+<h3>Postado em janeiro de 2023</h3>
 <p>
   "Novas Atualizações na História de "Above the Sea" - Um Jogo de RPG Musical Épico! </p>
 
@@ -33,18 +33,50 @@ article.innerHTML = `
   
   <p> Nós estamos muito animados com essas novas atualizações e esperamos que vocês também estejam! Fiquem ligados para mais novidades e atualizações em breve. Já estamos trabalhando duro para tornar "Above the Sea" o melhor jogo RPG musical que vocês já jogaram!</p>
   
-  <P> Até a próxima!</P>
-  <P> Equipe de "Above the Sea"." </P>
+  <p> Até a próxima! Equipe de "Above the Sea"." </P>
 
-<<<<<<< HEAD
 
-=======
->>>>>>> c660bf1b270c2dcc3af24c0558381fcd90a0ffa1
+  <h3> Postado em dezembro de 2023</h3>
+
+
+<p>"Rumores Sobre Novas Adições ao Jogo RPG Musical "Above the Sea"</p>
+
+<p>Olá fãs de jogos RPG!</p>
+
+<p>Estamos recebendo boatos de que a equipe por trás do popular jogo RPG musical "Above the Sea" está planejando novas adições ao jogo. Desde o lançamento, o jogo tem sido elogiado por sua envolvente história e personagens únicos, e muitos jogadores estão ansiosos para saber o que a equipe tem planejado para o futuro.</p>
+<p>Embora não haja nenhuma confirmação oficial sobre as mudanças planejadas, rumores apontam para a inclusão de novos personagens e elementos na história. Alguns dizem que a equipe está planejando adicionar ainda mais interação para os jogadores, permitindo que eles façam escolhas que afetem o rumo da história.</p>
+
+<p>Nós não podemos esperar para ver o que a equipe tem guardado! Fique ligado para mais atualizações e novidades sobre "Above the Sea". Com certeza será uma aventura épica.</p>
+
+<p>Até a próxima!</p>
+
+
+<h3> Postado em novembro de 2022</h3>
+
+
+<p>Expectativas para o Jogo RPG Musical "Above the Sea"</p>
+
+<p>Olá amantes de jogos RPG!</p>
+
+<p>Estamos animados para o lançamento do jogo RPG musical "Above the Sea", previsto para breve. Com uma equipe de desenvolvedores talentosos e uma trilha sonora envolvente, esperamos que este jogo se torne um sucesso entre os fãs de jogos RPG.</p>
+
+<p>A história segue quatro personagens de origens diferentes - Miyuki, a sereia; Tatsue, a guitarrista; Kazuo, o gângster; e Akira, o samurai - em sua jornada para descobrir o verdadeiro significado da música e da vida. Com um enredo envolvente e personagens carismáticos, esperamos que este jogo conquiste os jogadores.
+
+<p>Além disso, a trilha sonora composta especialmente para o jogo promete ser uma experiência musical única e envolvente,
+com uma combinação de estilos musicais diferentes, esperamos que a trilha sonora se torne uma parte integrante da jornada épica dos personagens.</p>
+
+<P>Nós não vemos a hora de mergulhar na história de "Above the Sea"! Fique ligado para mais atualizações sobre o lançamento do jogo.</p>
+
+<p>Até a próxima!</p>
+
+
 ` 
-console.log(article) 
+console.log(section) 
 
 
-let main = document.querySelector("main");
+let main = document.querySelector("#publicacoes");
 
-main.appendChild(article)
+console.log(main)
+
+main.appendChild(section)
 

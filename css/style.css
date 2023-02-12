@@ -7,19 +7,9 @@
 }
 
 body{
-/*   background-color: antiquewhite;*/
-    background-color: #9cdbf3;  /*fundo oficial*/
+    background-color: #ffffff;  /*fundo oficial*/
 }
 
-/*
-estilização do backgroun com fundo gradiente
-main{
-    background-image: linear-gradient(antiquewhite, #4cb3d381);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 100%;
-}*/
 
 html {
     height: 100%;
@@ -48,18 +38,16 @@ html {
     padding-top: 12rem;
 }
 
-#container_index{
+#container_index {
     max-width: 1040px;
     margin-left: 150px;
-    mar
-
 }
 
 
 .container {
     max-width: 1040px;
     margin:  auto;
-    padding: 0 %;
+    padding: 0;
 }
 
 p {
@@ -81,6 +69,7 @@ h1 {
     
 }
 
+
 #posth{
     font-family: 'Philosopher';
     font-weight: 500;
@@ -90,17 +79,6 @@ h1 {
     text-transform: uppercase;
     margin: 2rem 0;
 }
-
-h3 {
-    font-family: 'Philosopher';
-    font-weight: 500;
-    font-size: 20px;
-    text-decoration: underline;
-    text-align: lef;
-    text-transform: uppercase;
-    margin: 2rem 0;
-}
-
 #banner {
     display: flex;
     justify-content: center;

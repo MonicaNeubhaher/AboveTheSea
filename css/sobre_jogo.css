@@ -1,5 +1,5 @@
 /*definicão da página sobre o jogo*/
- .jogo {
+ .personagens {
     display:flex;
     text-align: center;
     border-top: none;
@@ -11,10 +11,10 @@
 
 .personagem1{
     display: table-caption;
-    color: rgb(46, 146, 228);
+    color: rgb(0, 0, 0);
     float: left;
     caption-side: top;
-    padding: 5px;
+    padding: 15px;
     border: thin solid;
     margin: 0px 10px 10px 0px;
     width: 15%;
@@ -22,11 +22,10 @@
 }
 
 .personagem2{
-    display: table-caption;
-    color: rgb(46, 146, 228);
+    display: table-caption;rgb(0, 0, 0) /*rgb(46, 146, 228)*/;
     float: left;
     caption-side: top;
-    padding: 5px;
+    padding: 15px;
     border: thin solid;
     margin: 0px 10px 10px 0px;
     width: 15%;
@@ -34,10 +33,10 @@
 }
 .personagem3{
     display: table-caption;
-    color: rgb(46, 146, 228);
+    color: rgb(0, 0, 0);
     float: left;
     caption-side: top;
-    padding: 5px;
+    padding: 15px;
     border: thin solid;
     margin: 0px 10px 10px 0px;
     width: 15%;
@@ -46,10 +45,80 @@
 
 .personagem4{
     display: table-caption;
-    color: rgb(46, 146, 228);
+    color: rgb(0, 0, 0);
     float: left;
     caption-side: top;
-    padding: 5px;
+    padding: 15px;
+    border: thin solid;
+    margin: 0px 10px 10px 0px;
+    width: 15%;
+    clear: both;
+}
+
+.cenarios {
+    display:flex;
+    text-align: center;
+    border-top: none;
+    padding-top: 0;
+    float: inline-start;
+    margin: 2rem;
+    justify-content: center;
+ }
+
+.cenario1{
+    display: table-caption;
+    color: rgb(0, 0, 0);
+    float: left;
+    caption-side: top;
+    padding: 15px;
+    border: thin solid;
+    margin: 0px 10px 10px 0px;
+    width: 15%;
+    clear: both;
+}
+
+.cenario2{
+    display: table-caption;
+    color: rgb(0, 0, 0);
+    float: left;
+    caption-side: top;
+    padding: 15px;
+    border: thin solid;
+    margin: 0px 10px 10px 0px;
+    width: 15%;
+    clear: both;
+}
+
+.cenario3{
+    display: table-caption;
+    color: rgb(0, 0, 0);
+    float: left;
+    caption-side: top;
+    padding: 15px;
+    border: thin solid;
+    margin: 0px 10px 10px 0px;
+    width: 15%;
+    clear: both;
+}
+
+.cenario4{
+    display: table-caption;
+    color: rgb(0, 0, 0);
+    float: left;
+    caption-side: top;
+    padding: 15px;
+    border: thin solid;
+    margin: 0px 10px 10px 0px;
+    width: 15%;
+    clear: both;
+}
+
+.cenario5{
+    display: table-caption;
+    color: rgb(0, 0, 0);
+    float: left;
+    caption-side: top;
+    padding: 15px;
     border: thin solid;
     margin: 0px 10px 10px 0px;
     width: 15%;
@@ -57,7 +126,7 @@
 }
 
 #descricao_jogo{
-    text-align: center;
+    text-align: justify;
     margin: 2rem ;
     padding: 0 2%;
 }

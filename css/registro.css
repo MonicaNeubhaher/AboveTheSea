@@ -46,8 +46,7 @@
 
 
 #logar {
-    /* background-color: #a18181; */
-    width: 15rem;
+     width: 15rem;
     height: 26rem;
     margin: 1rem;
     padding: 1rem;
@@ -55,7 +54,6 @@
 }
 
 #registrar {
-    /* background-color: #a18181; */
     width: 15rem;
     height: 26rem;
     margin: 1rem;

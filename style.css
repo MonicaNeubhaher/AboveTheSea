@@ -91,8 +91,7 @@ h4 {
 }
 #banner {
     display: flex;
-    height: 100%;
-    width: 100%;
+    justify-content: center;
 }
 
 #banner img {

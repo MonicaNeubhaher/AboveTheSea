@@ -1,0 +1,155 @@
+/* definição do fundo e a fonte das telas*/
+@import "./header.css";
+
+
+* {
+   font-family: 'Philosopher', sans-serif;
+}
+
+body{
+    background-color: #ffffff;  /*fundo oficial*/
+}
+
+
+html {
+    height: 100%;
+}
+
+
+/* deixar o header fixo para rolagem da paginas com as postagens */
+#menu{
+    position: fixed;
+    top: 0;
+    bottom: auto
+}
+
+#titulopubli{
+    top:120px;
+    background-color:  #9cdbf3;
+    position: fixed;
+    left: 0;
+    width: 100%
+    
+}
+
+
+/* deixar o inicio da pagina logo abaixo do header fixo */
+#paginapublicacoes{
+    padding-top: 12rem;
+}
+
+#container_index {
+    max-width: 1040px;
+    margin-left: 150px;
+}
+
+
+.container {
+    max-width: 1040px;
+    margin:  auto;
+    padding: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Aclonica', sans-serif;
+
+}
+
+/* definição do h1 e h3 para título e sub-título das páginas*/
+h1 {
+    font-family: 'Philosopher';
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+h4 {
+    font-family: 'Philosopher';
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+
+#posth{
+    font-family: 'Philosopher';
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+#banner {
+    display: flex;
+    justify-content: center;
+}
+
+#banner img {
+    width: 8%
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    margin-bottom: 10px;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: #4cb3d386;
+}
+
+#footer {
+    display: flex;
+    font-family: 'Ms Sans Serif';
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:5px;
+    gap: 20px;
+    align-items: center;
+    font-weight: 550;
+}
+
+.footer_img ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width:720px) {
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 10px;
+    }
+}
+
+#usuario_logado{
+    display:block;
+    background-color: #4cb3d386;
+    border-radius: 15px;
+    width:auto;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: right;
+    font-size: 12px;
+    font-family: 'Ms Sans Serif';
+    right: 0 auto;
+}

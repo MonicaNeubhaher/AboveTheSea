@@ -1,0 +1,78 @@
+/* definição da página Index*/
+#atualizacoes {
+   
+    display: flex;
+       
+
+  
+    
+}
+.container{
+    padding-left: 0;
+    
+}
+
+/*.caixaposttitulo{
+    
+} */
+
+/*.caixad{
+    border-radius: 15px;
+    background-color: #4cb3d386;
+    padding: 20px;
+}*/
+
+/* barra de arquivos*/
+#lista_arquivos {
+    position: fixed;    
+    left: 980PX;    
+    background-color: #4cb3d386;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 50px;
+}
+
+#lista_arquivos p {
+    padding: 15px;
+}
+
+#lista_arquivos nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#lista_arquivos nav ul li {
+    padding-bottom: 10px;
+}
+
+#lista_arquivos nav ul li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+}
+
+.itens {
+    text-align: center;
+}
+
+#paragrafolistaarquivos{
+   margin-left: 0px;
+  
+  
+   
+    
+
+}
+
+
+main p {
+/*    font-family: 'Cherry Cream Soda';*/
+    text-align: justify;
+    margin: 2rem;
+    margin-left: 0;
+    max-width: 40rem;
+    padding: 10PX;
+}
+

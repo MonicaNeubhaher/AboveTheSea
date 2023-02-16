@@ -3,12 +3,11 @@
 
 
 * {
-    font-family: 'Philosopher', sans-serif;
+   font-family: 'Philosopher', sans-serif;
 }
 
-body {
-    background-color: #ffffff;
-    /*fundo oficial*/
+body{
+    background-color: #ffffff;  /*fundo oficial*/
 }
 
 
@@ -18,23 +17,24 @@ html {
 
 
 /* deixar o header fixo para rolagem da paginas com as postagens */
-#menu {
+#menu{
     position: fixed;
     top: 0;
     bottom: auto
 }
 
-#titulopubli {
-    top: 120px;
-    background-color: #9cdbf3;
+#titulopubli{
+    top:120px;
+    background-color:  #9cdbf3;
     position: fixed;
     left: 0;
     width: 100%
+    
 }
 
 
 /* deixar o inicio da pagina logo abaixo do header fixo */
-#paginapublicacoes {
+#paginapublicacoes{
     padding-top: 12rem;
 }
 
@@ -46,7 +46,7 @@ html {
 
 .container {
     max-width: 1040px;
-    margin: auto;
+    margin:  auto;
     padding: 0;
 }
 
@@ -66,19 +66,21 @@ h1 {
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 20px;
+    
 }
 
 h3 {
     font-family: 'Philosopher';
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     text-transform: uppercase;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }
 
-#posth {
+
+#posth{
     font-family: 'Philosopher';
     font-weight: 500;
     font-size: 20px;
@@ -87,7 +89,6 @@ h3 {
     text-transform: uppercase;
     margin: 2rem 0;
 }
-
 #banner {
     display: flex;
     justify-content: center;
@@ -118,7 +119,7 @@ footer {
     font-family: 'Ms Sans Serif';
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 5px;
+    margin:5px;
     gap: 20px;
     align-items: center;
     font-weight: 550;
@@ -140,11 +141,11 @@ footer {
     }
 }
 
-#usuario_logado {
-    display: block;
+#usuario_logado{
+    display:block;
     background-color: #4cb3d386;
     border-radius: 15px;
-    width: auto;
+    width:auto;
     margin: 1rem;
     padding: 1rem;
     text-align: right;

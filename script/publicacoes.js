@@ -64,16 +64,12 @@ section.innerHTML = `
 	<p class="datapostagens"><strong>${arrayPostagens[i].data}</strong></p>
 	<p class="autorpost"><strong></strong>${arrayPostagens[i].autor}</p>
 	<p class="textospost"><strong></strong>${arrayPostagens[i].texto}</p>
-   ` 
+   `  
 let main = document.querySelector("#publicacoes");
 main.appendChild(section);
 
-
 }
-
   function showAlert() {
     event.preventDefault();
     window.alert("Este parte do site está em desenvolvimento e esta página ainda não está disponível.");
   }
-
-  

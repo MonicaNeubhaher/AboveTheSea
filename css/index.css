@@ -1,20 +1,15 @@
 /* definição da página Index*/
 #atualizacoes {
-   
     display: flex;
-       
-
-  
-    
 }
+
 .container{
-    padding-left: 0;
-    
+    padding-left: 0;   
 }
 
-.caixaposttitulo{
+/*.caixaposttitulo{
     
-}
+} */
 
 /*.caixad{
     border-radius: 15px;
@@ -36,7 +31,6 @@
 
 #lista_arquivos p {
     padding: 15px;
-    text-decoration: 
 }
 
 #lista_arquivos nav ul {
@@ -60,16 +54,10 @@
 
 #paragrafolistaarquivos{
    margin-left: 0px;
-  
-  
-   
-    
-
 }
 
 
 main p {
-/*    font-family: 'Cherry Cream Soda';*/
     text-align: justify;
     margin: 2rem;
     margin-left: 0;

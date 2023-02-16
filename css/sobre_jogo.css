@@ -86,7 +86,7 @@
     padding: 15px;
     border: thin solid;
     margin: 0px 10px 10px 0px;
-    width: 15%;
+    width: 27%;
     clear: both;
 }
 
@@ -98,7 +98,7 @@
     padding: 15px;
     border: thin solid;
     margin: 0px 10px 10px 0px;
-    width: 15%;
+    width: 27%;
     clear: both;
 }
 
@@ -110,31 +110,7 @@
     padding: 15px;
     border: thin solid;
     margin: 0px 10px 10px 0px;
-    width: 15%;
-    clear: both;
-}
-
-.cenario4{
-    display: table-caption;
-    color: rgb(0, 0, 0);
-    float: left;
-    caption-side: top;
-    padding: 15px;
-    border: thin solid;
-    margin: 0px 10px 10px 0px;
-    width: 15%;
-    clear: both;
-}
-
-.cenario5{
-    display: table-caption;
-    color: rgb(0, 0, 0);
-    float: left;
-    caption-side: top;
-    padding: 15px;
-    border: thin solid;
-    margin: 0px 10px 10px 0px;
-    width: 15%;
+    width: 27%;
     clear: both;
 }
 

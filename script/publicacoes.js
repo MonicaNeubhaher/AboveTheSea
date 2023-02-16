@@ -33,7 +33,7 @@ const arrayPostagens = [
     titulo: "Novas Atualizações na História de \"Above the Sea\" - Um Jogo de RPG Musical Épico!",
     data: "03/10/2022",
     autor: "Nit",
-    texto: "Olá fãs de jogos RPG! Estamos animados para compartilhar novidades sobre o próximo jogo RPG musical, Above the Sea. <br><br> Desde o início, a equipe tem trabalhado incansavelmente para criar um jogo épico que irá transportar os jogadores para um mundo cheio de aventura e música. <br><br> A fase inicial de criação tem sido uma jornada emocionante, cheia de ideias brilhantes e um compromisso inquebrantável em criar algo verdadeiramente único e memorável. <br><br> Nós já temos uma equipe talentosa de roteiristas, compositor es e artistas trabalhando juntos para criar personagens interessantes, uma trilha sonora incrível e uma história envolvente. <br><br> A equipe está trabalhando duro para garantir que Above the Sea seja um jogo digno de espera, e estamos ansiosos para compartilhar mais novidades com vocês em breve. <br><br> Fique ligado para mais atualizações sobre a jornada de criação de Above the Sea. <br><br> Até mais..!"
+    texto: "Olá fãs de jogos RPG! Estamos animados para compartilhar novidades sobre o próximo jogo RPG musical, Above the Sea. <br><br> Desde o início, a equipe tem trabalhado incansavelmente para criar um jogo épico que irá transportar os jogadores para um mundo cheio de aventura e música. <br><br> A fase inicial de criação tem sido uma jornada emocionante, cheia de ideias brilhantes e um compromisso inquebrantável em criar algo verdadeiramente único e memorável. <br><br> Nós já temos uma equipe talentosa de roteiristas, compositor es e artistas trabalhando juntos para criar personagens interessantes, uma trilha sonora incrível e uma história envolvente. <br><br> A equipe está trabalhando duro para garantir que Above the Sea seja um jogo digno de espera, e estamos ansiosos para compartilhar mais novidades com vocês em breve. <br><br> Fique ligado para mais atualizações sobre a jornada de criação de Above the Sea. <br><br> Até mais!"
   }, 
 
 
@@ -64,17 +64,16 @@ section.innerHTML = `
 	<p class="datapostagens"><strong>${arrayPostagens[i].data}</strong></p>
 	<p class="autorpost"><strong></strong>${arrayPostagens[i].autor}</p>
 	<p class="textospost"><strong></strong>${arrayPostagens[i].texto}</p>
-   
-  
-` 
+   ` 
 let main = document.querySelector("#publicacoes");
 main.appendChild(section);
 
 
-
-
-
-
-
 }
 
+  function showAlert() {
+    event.preventDefault();
+    window.alert("Este parte do site está em desenvolvimento e esta página ainda não está disponível.");
+  }
+
+  

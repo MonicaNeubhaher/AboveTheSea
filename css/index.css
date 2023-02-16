@@ -1,10 +1,15 @@
 /* definição da página Index*/
 #atualizacoes {
+   
     display: flex;
-}
+       
 
+  
+    
+}
 .container{
-    padding-left: 0;   
+    padding-left: 0;
+    
 }
 
 /*.caixaposttitulo{
@@ -54,10 +59,16 @@
 
 #paragrafolistaarquivos{
    margin-left: 0px;
+  
+  
+   
+    
+
 }
 
 
 main p {
+/*    font-family: 'Cherry Cream Soda';*/
     text-align: justify;
     margin: 2rem;
     margin-left: 0;

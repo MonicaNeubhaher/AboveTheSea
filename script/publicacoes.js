@@ -68,8 +68,12 @@ section.innerHTML = `
 let main = document.querySelector("#publicacoes");
 main.appendChild(section);
 
+
 }
+
   function showAlert() {
     event.preventDefault();
     window.alert("Este parte do site está em desenvolvimento e esta página ainda não está disponível.");
   }
+
+ 

@@ -121,6 +121,7 @@ footer {
     margin: 5px;
     gap: 20px;
     align-items: center;
+    font-weight: 550;
 }
 
 .footer_img ul {

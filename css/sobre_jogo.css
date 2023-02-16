@@ -31,6 +31,7 @@
     width: 15%;
     clear: both;
 }
+
 .personagem3{
     display: table-caption;
     color: rgb(0, 0, 0);
@@ -44,6 +45,18 @@
 }
 
 .personagem4{
+    display: table-caption;
+    color: rgb(0, 0, 0);
+    float: left;
+    caption-side: top;
+    padding: 15px;
+    border: thin solid;
+    margin: 0px 10px 10px 0px;
+    width: 15%;
+    clear: both;
+}
+
+.personagem5{
     display: table-caption;
     color: rgb(0, 0, 0);
     float: left;
@@ -127,6 +140,8 @@
 
 #descricao_jogo{
     text-align: justify;
-    margin: 2rem ;
+    margin-top: 2rem ;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
     padding: 0 2%;
 }

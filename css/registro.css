@@ -9,18 +9,19 @@
     margin: 0 0 5px;
     padding: 10px 15px;
     width: 85%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     border-radius: 5px;
     border: solid 1px black;
 }
 
 .input-padrao:focus {
-    background: #333;
-    color: #fff;
+    background:  #ddd;;
+    /* color: #fff; */
 }
 
-#form_login label{
+#form_login label {
     font-size: 14px;
+    display: block;
 }
 
 .enviar {
@@ -39,13 +40,13 @@
 }
 
 .enviar:hover {
-    background: greenyellow;
-    transform: scale(1.2);
+    background: #333;
+    color: white;
 }
 
+
 #logar {
-    background-color: #a18181;
-    width: 15rem;
+     width: 15rem;
     height: 26rem;
     margin: 1rem;
     padding: 1rem;
@@ -53,7 +54,6 @@
 }
 
 #registrar {
-    background-color: #a18181;
     width: 15rem;
     height: 26rem;
     margin: 1rem;
@@ -92,21 +92,35 @@
     padding: .2rem .3rem;
     width: auto;
     display: block;
-    background-color: #202020;
+    background-color: #2367b6;
+
 }
 
 input.error {
-   border: solid 1px #992020;
+    border: solid 1px #992020;
     background-color: #CCBBBB;
     color: #662020;
 }
 
-input.correct
-{
+input.correct {
     background-color: antiquewhite;
     border: solid 1px black;
 }
 
 .visible {
     display: block;
+}
+
+label {
+    margin-bottom: .2rem;
+    position: relative;
+}
+
+label:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+.orientacao {
+    margin-top: 1.5rem;
+    font-size: .7rem;
 }

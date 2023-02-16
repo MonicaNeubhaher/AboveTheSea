@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/registro.css" />
 
+  <script src="/script/script.js" defer></script>
   <script src="/script/registro.js" defer></script>
 
   <!-- Links do Google Fonts -->
@@ -20,12 +21,12 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <title>Registro</title>
+  <title>Entrar</title>
 </head>
 
 <!-- <body background="imagens/imgfundo.png"> -->
 
-<body>
+<body onload="myFunction2()">
   <header class="">
     <section class="container header">
       <div id="banner">
@@ -52,9 +53,12 @@
         <a class="btn_entrar" href="registro.html">Entrar</a>
       </div>
     </section>
-  </header>
 
-  <!-- <main class="container"> -->
+    </header>
+
+    <span id="usuario_logado">Usuário:</span>
+
+    <!-- <main class="container"> -->
     <h1>LOGIN</h1>
     <main>  
     <section>
@@ -70,12 +74,12 @@
       <div id="form_login">
         <div id="logar">
           <form>
-            <label for="email_login">E-mail</label>
+            <label for="email_login">*E-mail</label>
             <input id="email_login" name="email_login" type="email" class="input-padrao" required
                    placeholder="seuemail@domino.com.br" />
             <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
 
-            <label for="senha_login">Senha</label>
+            <label for="senha_login">*Senha</label>
             <input id="senha_login" name="senha_login" type="password" class="input-padrao" required />
             <p id="senha-helper" class="helper-text">Mensagem de ajuda</p>
 
@@ -85,11 +89,11 @@
 
         <div id="registrar">
           <form>
-            <label for="nome">Nome usuário</label>
+            <label for="nome">*Nome usuário</label>
             <input id="nome" name="nome" type="text" class="input-padrao" required />
             <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
 
-            <label for="email_reg">E-mail</label>
+            <label for="email_reg">*E-mail</label>
             <input id="email_reg" name="email_reg" type="email" class="input-padrao" required
                    placeholder="seuemail@domino.com.br" />
             <p id="email_reg-helper" class="helper-text">Mensagem de ajuda</p>
@@ -98,7 +102,7 @@
             <input id="celular" name="celular" type="tel" class="input-padrao" required
               placeholder="(xx) xxxxx - xxxx" />
 
-            <label for="senha_reg">Senha</label>
+            <label for="senha_reg">*Senha</label>
             <input id="senha_reg" name="senha_reg" type="password" class="input-padrao" required />
             <p id="senha_reg-helper" class="helper-text">Mensagem de ajuda</p>
 
@@ -106,7 +110,7 @@
             <br>
             <br>
  
-            <label for="confirm_senha_reg">Confirme a senha</label>
+            <label for="confirm_senha_reg">*Confirme a senha</label>
             <input id="confirm_senha_reg" name="confirm_senha_reg" type="password" class="input-padrao" required />
             <p id="confirma-senha-helper" class="helper-text">Mensagem de ajuda</p>
             
@@ -120,7 +124,7 @@
         </form>
       </div>
     </section>
-  </main>
+   </main>
 
   <footer>
     <section class="container">
@@ -147,4 +151,5 @@
   </footer>
 </body>
 
+</html>
 </html>

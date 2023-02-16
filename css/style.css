@@ -7,46 +7,88 @@
 }
 
 body{
-/*   background-color: antiquewhite;*/
-    background-color: #9cdbf3;  /*fundo oficial*/
+    background-color: #ffffff;  /*fundo oficial*/
 }
+
 
 html {
     height: 100%;
 }
 
+
+/* deixar o header fixo para rolagem da paginas com as postagens */
+#menu{
+    position: fixed;
+    top: 0;
+    bottom: auto
+}
+
+#titulopubli{
+    top:120px;
+    background-color:  #9cdbf3;
+    position: fixed;
+    left: 0;
+    width: 100%
+    
+}
+
+
+/* deixar o inicio da pagina logo abaixo do header fixo */
+#paginapublicacoes{
+    padding-top: 12rem;
+}
+
+#container_index {
+    max-width: 1040px;
+    margin-left: 150px;
+}
+
+
 .container {
     max-width: 1040px;
-    margin: 0 auto;
-    padding: 0 2%;
+    margin:  auto;
+    padding: 0;
 }
 
 p {
     font-size: 16px;
     line-height: 22px;
     font-family: 'Aclonica', sans-serif;
-   
+
 }
 
 /* definição do h1 e h3 para título e sub-título das páginas*/
 h1 {
     font-family: 'Philosopher';
     font-weight: 600;
-    font-size: 36px;
+    font-size: 26px;
     text-align: center;
     text-transform: uppercase;
-    margin: 1rem 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
 h3 {
     font-family: 'Philosopher';
-    font-weight: 500;
-    font-size: 26px;
+    font-weight: 600;
+    font-size: 22px;
     text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+
+#posth{
+    font-family: 'Philosopher';
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: left;
     text-transform: uppercase;
     margin: 2rem 0;
 }
-
 #banner {
     display: flex;
     height: 100%;
@@ -69,7 +111,7 @@ h3 {
 
 footer {
     width: 100%;
-    padding: 3rem 0;
+    padding: 2rem 0;
     background-color: #4cb3d386;
 }
 
@@ -81,6 +123,7 @@ footer {
     margin:5px;
     gap: 20px;
     align-items: center;
+    font-weight: 550;
 }
 
 .footer_img ul {
@@ -99,3 +142,15 @@ footer {
     }
 }
 
+#usuario_logado{
+    display:block;
+    background-color: #4cb3d386;
+    border-radius: 15px;
+    width:auto;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: right;
+    font-size: 12px;
+    font-family: 'Ms Sans Serif';
+    right: 0 auto;
+}

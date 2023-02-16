@@ -8,6 +8,11 @@
     justify-content: space-between;
 }
 
+#desenvolvedor img {
+    border-radius: 30px;
+}
+
+
 #desenvolvedor p {
     padding-right: 5rem;
 }

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="/imagens/logo2.png" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/equipe.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="/imagens/logo2.png" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/equipe.css" />
+
+  <script src="/script/script.js" defer></script>
 
   <!-- Links do Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,100 +20,101 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <title>EQUIPE</title>
-  </head>
+  <title>EQUIPE</title>
+</head>
 
-  <body>
-    <header class="">
+<body onload="myFunction2()">
+  <header class="">
 
-      <section class="container header">
+    <section class="container header">
 
-        <div id="banner">
-          <!--colocar a imagem do header com o logo-->
-          <img src="/imagens/logo2.png">
+      <div id="banner">
+        <!--colocar a imagem do header com o logo-->
+        <img style="height: 100px; width:100px;" src="/imagens/logo2.png">
 
-        </div>
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">Início</a></li>
-  
-            <div class="dropdown">
-              <li class="dropbtn">Sobre</li>
-              <div class="dropdown-content">
-                <a href="/pages/sobre_jogo.html">O jogo</a>
-                <a href="/pages/sobre_dev.html">O desenvolvedor</a>
-                </div>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+
+          <div class="dropdown">
+            <li class="dropbtn">Sobre</li>
+            <div class="dropdown-content">
+              <a href="/pages/sobre_jogo.html">O jogo</a>
+              <a href="/pages/sobre_dev.html">O desenvolvedor</a>
             </div>
-  
-            <li><a href="voluntario.html">Voluntarie-se</a></li>
-            <li><a href="doacoes.html">Doações</a></li>
-            <li><a href="equipe.html">Equipe</a></li>
-          </ul>
-        </nav>
-          <div>
-          <a class="btn_entrar" href="registro.html">Entrar</a>
-        </div>
+          </div>
 
-      </section>
-    </header>
- 
-    <h1>EQUIPE</h1>
-    <main>
-      <div class="figure">
-        <figure>
-          <img
-            src="/imagens/Francisco Cruz.png" width="40%" alt="Francisco Cruz" />
-          <figcaption>Francisco Cruz</figcaption>
-        </figure>
-
-        <figure>
-          <img src="/imagens/João Cândido.png" width="40%" alt="João Cândido" />
-          <figcaption>João Cândido</figcaption>
-        </figure>
-
-        <figure>
-          <img
-            src="/imagens/Monica Neubhaher.png" width="40%" alt="Monica R. L. Neubhaher" />
-          <figcaption>Monica R. L. Neubhaher</figcaption>
-        </figure>
-
-        <figure>
-          <img src="/imagens/Natália Dias.png" width="40%" alt="Natália Dias" />
-          <figcaption>Natalia Dias</figcaption>
-        </figure>
+          <li><a href="voluntario.html">Voluntarie-se</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a class="btn_entrar" href="registro.html">Entrar</a>
       </div>
 
-      <br />
-      <br />
-      <br />
-      <br />
-    </main>
+    </section>
+  </header>
 
-    <footer>
-      <!-- <img src="imagens/img footer.png" alt="Redes sociais"> -->
-      <section class="container">
-        <div id="footer">
-          <div>
-            <p>Above The Sea ©</p>
-            <p>abovethesea@hotmail.com Copyright @2022</p>
-          </div>
-          <div class="footer_img">
-            <ul>
-              <li>
-                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-              </li>
-              <li>
-                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-              </li>
-              <li>
-                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-              </li>
-            </ul>
-          </div>
+  <span id="usuario_logado">Usuário:</span>
+
+  <h1>EQUIPE</h1>
+  <main>
+    <div class="figure">
+      <figure>
+        <img src="/imagens/Francisco Cruz.png" width="40%" alt="Francisco Cruz" />
+        <figcaption>Francisco Cruz</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/imagens/João Cândido.png" width="40%" alt="João Cândido" />
+        <figcaption>João Cândido</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/imagens/Monica Neubhaher.png" width="40%" alt="Monica R. L. Neubhaher" />
+        <figcaption>Monica R. L. Neubhaher</figcaption>
+      </figure>
+      <figure>
+        <img src="/imagens/Natália Dias.png" width="40%"
+        alt="Natalia"/>
+        <figcaption>Natalia Dias</figcaption>
+      </figure>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+  </main>
+
+  <footer>
+    <!-- <img src="imagens/img footer.png" alt="Redes sociais"> -->
+    <section class="container">
+      <div id="footer">
+        <div>
+          <p>Above The Sea ©</p>
+          <p>abovethesea@hotmail.com Copyright @2022</p>
         </div>
+        <div class="footer_img">
+          <ul>
+            <li>
+              <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-      </section>
-    </footer>
+    </section>
+  </footer>
 
-  </body>
+</body>
+
 </html>

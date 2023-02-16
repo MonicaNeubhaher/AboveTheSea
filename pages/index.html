@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/index.css" />
 
+  <script src="/script/script.js" defer></script>
+  <script src="/script/publicacoes.js" defer></script>
+  
+
   <!-- Links do Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +25,9 @@
   <title>Home</title>
 </head>
 
-<body>
+<body onload="myFunction2()">
+
+   
   <header class="">
 
     <section class="container header">
@@ -31,7 +37,7 @@
         <img src="/imagens/logo2.png">
 
       </div>
-      
+
       <nav>
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
@@ -57,64 +63,46 @@
     </section>
   </header>
 
-  <main>
-    <h1>Atualização de 21 de novembro</h1>
-    <div class="container">
-      <div id="atualizacoes">
-        <section>
-          <h3>Postado em 21 de novembro de 2022</h3>
-          <p>
-            Se você tentar usar o iniciar o jogo e não funcionar, não me envie
-            um e-mail relatando como um “bug”. Não há nada que eu possa fazer.
-            O executável nunca muda e a maneira como carrego a versão mais
-            recente do jogo também nunca muda.
-          </p>
+  <span id="usuario_logado">Usuário:</span>
 
-          <p>
-            Portanto, se você não conseguir usar , baixe a atualização mais
-            recente, não tenho ideia de qual é o problema e não há nada que eu
-            possa fazer a respeito.
-          </p>
 
-          <p>
-            Sua única opção é tentar usar um dos outros links de download e se
-            isso não funcionar, aguarde até que a próxima compilação seja
-            lançada.
-          </p>
 
-          <p>
-            Não sei mais o que te dizer. Na verdade, lancei uma nova versão do
-            launcher hoje.
-          </p>
+<body>
+  <div id="lista_arquivos">
+    <div>
+      <p id="paragrafolistaarquivos">ARQUIVOS</p>
+    </div>
+    <div>
+      <nav class="arquivos">
+        <ul>
 
-          <p>
-            O que mudou? Apenas uma coisa: o texto das mensagens de erro. As
-            mensagens de erro agora são extremamente curtas e informam
-            exatamente o que fazer se o iniciador não estiver funcionando:
-            apenas desista do iniciador e use um dos links de download
-            alternativos!
-          </p>
-        </section>
+          <li><a href="#" onclick="showAlert()"> Fevereiro - 2023 </a></li>
+          <li><a href="#" onclick="showAlert()"> Janeiro - 2023 </a></li>
+          <li><a href="#" onclick="showAlert()"> Dezembro - 2022 </a></li>
+          <li><a href="#" onclick="showAlert()"> Novembro - 2022 </a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+  <div class="container">
+   
+    <main id="publicacoes">
+      <h1 id="posth">ATUALIZAÇÕES</h1>
+      <div class="container">
+        <div id="atualizacoes">
+  <section class="caixad">          
+    <h3 class="titulopostagens">Novidades sobre o RPG musical Above the Sea: Conclusão da fase de criação é anunciada!</h3>
+    <p class="datapostagens"><strong>17/02/2023</strong></p>
+    <p class="autorpost"><strong>Autor: EQUIPE ABOVE THE SEA</strong></p>
+    <p><strong>Olá jogadores de RPG! A espera acabou, finalmente temos novidades sobre Above the Sea! <br><br> A equipe por trás do jogo acaba de anunciar a conclusão da fase de criação e já está trabalhando na produção final. <br><br> Estamos animados para compartilhar que o jogo incluirá novos personagens, elementos da história e interações ainda mais profundas para os jogadores. <br><br> A equipe trabalhou incansavelmente para garantir que cada detalhe seja perfeito e a história seja ainda mais envolvente do que nunca. <br><br> Não podemos esperar para jogar e ver como as nossas escolhas afetam o rumo da história. <br><br> A data de lançamento ainda não foi anunciada, mas garantimos que vale a pena esperar. <br><br> Fique ligado para mais atualizações sobre Above the Sea. Será uma jornada épica e não vai querer perder!<br><br> Até a próxima.</strong></p>	
+</section>
 
-        <div id="lista_arquivos">
-          <div>
-            <p>ARQUIVOS</p>
-          </div>
-          <div>
-            <nav class="arquivos">
-              <ul>
-                <li><a>ARQUIVOS</a></li>
-                <li><a href="novembro.html"> Novembro - 2022 </a></li>
-                <li><a href="Outubro.html"> Outubro - 2022 </a></li>
-                <li><a href="Setembro.html"> Setembro - 2022 </a></li>
-                <li><a href="Agosto.html"> Agosto - 2022 </a></li>
-              </ul>
-            </nav>
-          </div>
+          
         </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 
   <footer>
     <section class="container">
@@ -141,5 +129,7 @@
     </section>
   </footer>
 </body>
+
+</html>
 
 </html>

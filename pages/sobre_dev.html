@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="/css/reset.css" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/sobre_dev.css" />
+ 
+  <script src="/script/script.js" defer></script>
 
   <!-- Links do Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +21,8 @@
   <title>Sobre o Desenvolvedor</title>
 </head>
 
-<body>
+<body onload="myFunction2()">
+
   <header class="">
     <section class="container header">
       <div id="banner">
@@ -27,7 +30,7 @@
       </div>
       <nav>
         <ul class="menu">
-          <li><a href="./index.html">Início</a></li>
+          <li><a href="index.html">Início</a></li>
 
           <div class="dropdown">
             <li class="dropbtn">Sobre</li>
@@ -37,9 +40,9 @@
             </div>
           </div>
 
-          <li><a href="./voluntario.html">Voluntarie-se</a></li>
-          <li><a href="./doacoes.html">Doações</a></li>
-          <li><a href="./equipe.html">Equipe</a></li>
+          <li><a href="voluntario.html">Voluntarie-se</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
         </ul>
       </nav>
       <div>
@@ -48,8 +51,10 @@
     </section>
   </header>
   
+  <span id="usuario_logado">Usuário:</span>
+
   <main>
-    <h1>SOBRE O DESENVOLVEDOR</h1>
+    <h1>Sobre o desenvolvedor</h1>
 
     <div id="desenvolvedor">
       <p>
